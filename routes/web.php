@@ -65,9 +65,19 @@ Route::group(['prefix'=>'admin'],function(){
 		//admin/cate/list
 		Route::get('list','PostController@getList');
 
-		Route::get('edit','PostController@getEdit');
-		
+		Route::get('edit/{id}','PostController@getEdit');
+
+		Route::post('edit/{id}','PostController@postEdit');
+
 		Route::get('add','PostController@getAdd');
+
+		Route::post('add','PostController@postAdd');
+
+		Route::get('del/{id}','PostController@getDel');
+	});
+
+	Route::group(['prefix'=>'ajax'],function(){
+		Route::get('subcate/{cate_id}','AjaxController@getSubcate');
 	});
 
 	Route::group(['prefix'=>'user'],function(){

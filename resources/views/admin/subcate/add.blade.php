@@ -26,16 +26,16 @@
                 <form action="admin/subcate/add" method="POST">
                     <input type="hidden" name="_token" value="{{csrf_token()}}"/>
                     <div class="form-group">
+                        <label>SubCategory Name</label>
+                        <input class="form-control" name="subcate_name" placeholder="Please Enter Sub Category Name" />
+                    </div>
+                    <div class="form-group">
                         <label>Catelogy</label>
                         <select class="form-control" name="cate_id">
                         @foreach($cate as $tl)
                             <option value="{{$tl->id}}">{{$tl->cate_name}}</option>
                         @endforeach
                         </select>
-                    </div>
-                    <div class="form-group">
-                        <label>SubCategory Name</label>
-                        <input class="form-control" name="subcate_name" placeholder="Please Enter Sub Category Name" />
                     </div>
                     <button type="submit" class="btn btn-default">Category Add</button>
                     <button type="reset" class="btn btn-default">Reset</button>

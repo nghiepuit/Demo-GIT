@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
-use App\Cate;
 use App\Customer;
+use App\Cate;
+
 
 class CateController extends Controller
 {
@@ -34,7 +35,7 @@ class CateController extends Controller
         $cate->cate_name = $request->cate_name;
         $cate->customer_id = $request->customer_id;
         $cate->save();
-        return redirect('admin/cate/add')->with('thongbao','Them thanh cong');
+        return redirect('admin/cate/add')->with('thongbao','Thêm thành công');
     }
     //Thieu $customer
     public function getEdit($id){
