@@ -84,9 +84,15 @@ Route::group(['prefix'=>'admin'],function(){
 		//admin/cate/list
 		Route::get('list','UserController@getList');
 
-		Route::get('edit','UserController@getEdit');
-		
+		Route::get('edit/{id}','UserController@getEdit');
+
+		Route::post('edit/{id}','UserController@postEdit');
+
 		Route::get('add','UserController@getAdd');
+
+		Route::post('add','UserController@postAdd');
+
+		Route::get('del/{id}','UserController@getDel');
 	});
 
 	Route::group(['prefix'=>'slide'] ,function(){

@@ -4,7 +4,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">Category
+                <h1 class="page-header">User
                     <small>List</small>
                 </h1>
             </div>
@@ -14,29 +14,29 @@
                     <tr align="center">
                         <th>ID</th>
                         <th>Name</th>
-                        <th>Category Parent</th>
-                        <th>Status</th>
+                        <th>Level</th>
+                        <th>Info</th>
                         <th>Delete</th>
                         <th>Edit</th>
                     </tr>
                 </thead>
                 <tbody>
+                    @foreach($user as $u)
                     <tr class="odd gradeX" align="center">
-                        <td>1</td>
-                        <td>Tin Tức</td>
-                        <td>None</td>
-                        <td>Hiện</td>
-                        <td class="center"><i class="fa fa-trash-o  fa-fw"></i><a href="#"> Delete</a></td>
-                        <td class="center"><i class="fa fa-pencil fa-fw"></i> <a href="#">Edit</a></td>
+                        <td>{{$u->id}}</td>
+                        <td>{{$u->user_name}}</td>
+                        <td>
+                            @if($u->user_level == 1)
+                            {{"Admin"}}
+                            @else
+                            {{"Member"}}
+                            @endif
+                        </td>
+                        <td>{{$u->user_info}}</td>
+                        <td class="center"><i class="fa fa-trash-o  fa-fw"></i><a href="admin/user/del/{{$u->id}}"> Delete</a></td>
+                        <td class="center"><i class="fa fa-pencil fa-fw"></i> <a href="admin/user/edit/{{$u->id}}">Edit</a></td>
                     </tr>
-                    <tr class="even gradeC" align="center">
-                        <td>2</td>
-                        <td>Bóng Đá</td>
-                        <td>Thể Thao</td>
-                        <td>Ẩn</td>
-                        <td class="center"><i class="fa fa-trash-o  fa-fw"></i><a href="#"> Delete</a></td>
-                        <td class="center"><i class="fa fa-pencil fa-fw"></i> <a href="#">Edit</a></td>
-                    </tr>
+                    @endforeach
                 </tbody>
             </table>
         </div>
