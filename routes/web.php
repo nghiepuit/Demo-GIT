@@ -23,13 +23,15 @@ Route::get('myview','MyController@Myview');
 
 Route::get('truyen/{t}','MyController@truyenview');*/
 
-use App\Cate;
 Route::get('/', function () {
     return view('welcome');
 });
 /*Route::get('thu',function(){
 	return view('admin.slide.list');
 });*/
+Route::get('admin/login','UserController@getLoginAdmin');
+Route::post('admin/login','UserController@postLoginAdmin');
+
 Route::group(['prefix'=>'admin'],function(){
 	Route::group(['prefix'=>'cate'],function(){
 		//admin/cate/list

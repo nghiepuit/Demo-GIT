@@ -4,8 +4,8 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">User {{$user->user_name}}
-                    <small>Add</small>
+                <h1 class="page-header">User
+                    <small>{{$user->user_name}}</small>
                 </h1>
             </div>
             <!-- /.col-lg-12 -->
@@ -28,6 +28,10 @@
                     <div class="form-group">
                         <label>User Name</label>
                         <input class="form-control" name="user_name" placeholder="Nhập tên User" value="{{$user->user_name}}" />
+                    </div>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input class="form-control" value="{{$user->user_email}}" />
                     </div>
                     <div class="form-group">
                         <input type="checkbox" id="changepass" name="user_passChange">

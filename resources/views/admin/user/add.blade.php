@@ -30,6 +30,10 @@
                         <input class="form-control" name="user_name" placeholder="Nhập tên User" />
                     </div>
                     <div class="form-group">
+                        <label>Email</label>
+                        <input class="form-control" name="user_email" type="email" placeholder="Nhập địa chỉ Email" />
+                    </div>
+                    <div class="form-group">
                         <label>Password</label>
                         <input type="password" class="form-control" name="user_pass" placeholder="Nhập mật khẩu" />
                     </div>

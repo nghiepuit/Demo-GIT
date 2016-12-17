@@ -7,8 +7,8 @@
     <meta name="description" content="Khóa Học Lập Trình Laravel Framework 5.x Tại Khoa Phạm">
     <meta name="author" content="">
 
-    <title>Admin - Khoa Phạm</title>
-
+    <title>Mobifone</title>
+    <base href="{{asset('')}}">
     <!-- Bootstrap Core CSS -->
     <link href="admin_asset/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -33,13 +33,25 @@
                         <h3 class="panel-title">Please Sign In</h3>
                     </div>
                     <div class="panel-body">
-                        <form role="form" action="" method="POST">
+                    @if(count($errors)>0)
+                    <div class="alert alert-danger">
+                        @foreach($errors->all() as $err)
+                            {{$err}}<br>
+                        @endforeach
+                    </div>
+                    @endif
+
+                    @if(session('thongbao'))
+                            {{session('thongbao')}}
+                    @endif
+                        <form role="form" action="admin/login" method="POST">
+                        <input type="hidden" name="_token" value="{{csrf_token()}}"/>
                             <fieldset>
                                 <div class="form-group">
-                                    <input class="form-control" placeholder="E-mail" name="email" type="email" autofocus>
+                                    <input class="form-control" placeholder="E-mail" name="user_email" type="email" autofocus>
                                 </div>
                                 <div class="form-group">
-                                    <input class="form-control" placeholder="Password" name="password" type="password" value="">
+                                    <input class="form-control" placeholder="Password" name="user_pass" type="password">
                                 </div>
                                 <button type="submit" class="btn btn-lg btn-success btn-block">Login</button>
                             </fieldset>
