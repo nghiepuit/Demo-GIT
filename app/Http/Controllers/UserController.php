@@ -126,7 +126,7 @@ class UserController extends Controller
             'user_pass.min'=>'Mật khẩu phải từ 8 kí tự trở lên',
             'user_pass.max'=>'Mật khẩu không vượt quá 30 kí tự'
             ]);
-        if (Auth::login(['user_email'=>$request->user_email,'user_pass'=>$request->user_pass])) {
+        if (Auth::attempt(['user_email'=>$request->user_email,'user_pass'=>$request->user_pass])) {
             return redirect('admin/cate/list');
         }   else{
             return redirect('admin/login')->with('thongbao','Login failed');
