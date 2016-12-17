@@ -48,7 +48,7 @@ class CateController extends Controller
         $cate= Cate::find($id);
         $this->validate($request,
             [
-                'cate_name' =>'required|unique:cate,cate_name|min:3|max:50'
+                'cate_name' =>'required|unique:cate,cate_name,'.$id.'|min:3|max:50'
             ],
             [
                 'cate_name.required' =>'Tên chuyên mục không được để trống',
