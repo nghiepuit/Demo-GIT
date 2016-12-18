@@ -51,7 +51,7 @@
                                     <input class="form-control" placeholder="E-mail" name="user_email" type="email" autofocus>
                                 </div>
                                 <div class="form-group">
-                                    <input class="form-control" placeholder="Password" name="user_pass" type="password">
+                                    <input class="form-control" placeholder="Password" name="user_pass" type="password" value="">
                                 </div>
                                 <button type="submit" class="btn btn-lg btn-success btn-block">Login</button>
                             </fieldset>
