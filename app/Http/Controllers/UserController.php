@@ -48,7 +48,7 @@ class UserController extends Controller
     	$user = new User;
     	$user->user_name = $request->user_name;
         $user->user_email = $request->user_email;
-    	$user->user_pass = $request->user_pass;
+    	$user->user_pass = bcrypt($request->user_pass);
     	$user->user_level = $request->user_level;
     	$user->user_info = $request->user_info;
     	$user->save();
@@ -100,7 +100,7 @@ class UserController extends Controller
                 'user_passAgain.same'=>'Mật khẩu không khớp',
                 'user_info.required'=>'Bạn chưa nhập thông tin'
             ]);
-            $user->user_pass = bcrypt($request->user_pass);
+            $user->password = bcrypt($request->user_pass);
 
         }
         $user->save();
@@ -127,7 +127,8 @@ class UserController extends Controller
             'user_pass.min'=>'Mật khẩu phải từ 8 kí tự trở lên',
             'user_pass.max'=>'Mật khẩu không vượt quá 30 kí tự'
             ]);
-        if (Auth::attempt(['user_email'=>$request->user_email,'user_pass'=>$request->user_pass])) {
+
+        if (Auth::attempt(['user_email'=>$request->user_email,'password'=>$request->user_pass])) {
             return redirect('admin/cate/list');
         }   else{
             return redirect('admin/login')->with('thongbao','Login failed');
