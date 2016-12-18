@@ -49,7 +49,7 @@ class SubcateController extends Controller
         $subcate= Subcate::find($id);
         $this->validate($request,
             [
-                'subcate_name' =>'required|unique:subcate,subcate_name|min:3|max:50'
+                'subcate_name' =>'required|unique:subcate,subcate_name,'.$id.'|min:3|max:50'
             ],
             [
                 'subcate_name.required' =>'Tên danh mục không được để trống',

@@ -83,7 +83,7 @@ class UserController extends Controller
             # code...
             $this->validate($request,
             [
-                'user_name'=>'required|min:4|max:15|unique:users,user_name',
+                'user_name'=>'required|unique:users,user_name,'.$id.'|min:4|max:15',
                 'user_pass'=>'required|min:8|max:15',
                 'user_passAgain'=>'required|same:user_pass',
                 'user_info'=>'required|max:500'
