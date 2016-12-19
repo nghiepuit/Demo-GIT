@@ -24,8 +24,8 @@ class UserController extends Controller
     public function postAdd(Request $request){
     	$this->validate($request,
     		[
-    			'name'=>'required|min:4|max:15|unique:users,user_name',
-                'email'=>'required|unique:users,user_email',
+    			'name'=>'required|min:4|max:15|unique:users,name',
+                'email'=>'required|unique:users,email',
     			'password'=>'required|min:8|max:15',
     			'passwordAgain'=>'required|same:password',
     			'user_info'=>'required|max:500'
@@ -65,7 +65,7 @@ class UserController extends Controller
     public function postEdit(Request $request,$id){
         $this->validate($request,
             [
-                'name'=>'required|min:4|max:15|unique:users,user_name'
+                'name'=>'required|min:4|max:15|unique:users,name,'.$id.''
             ],
             [
                 'name.required'=>'Bạn chưa nhập tên User',
