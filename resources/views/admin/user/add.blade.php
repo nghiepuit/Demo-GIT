@@ -27,19 +27,19 @@
                 <input type="hidden" name="_token" value="{{csrf_token()}}"/>
                     <div class="form-group">
                         <label>User Name</label>
-                        <input class="form-control" name="user_name" placeholder="Nhập tên User" />
+                        <input class="form-control" name="name" placeholder="Nhập tên User" />
                     </div>
                     <div class="form-group">
                         <label>Email</label>
-                        <input class="form-control" name="user_email" type="email" placeholder="Nhập địa chỉ Email" />
+                        <input class="form-control" name="email" type="email" placeholder="Nhập địa chỉ Email" />
                     </div>
                     <div class="form-group">
                         <label>Password</label>
-                        <input type="password" class="form-control" name="user_pass" placeholder="Nhập mật khẩu" />
+                        <input type="password" class="form-control" name="password" placeholder="Nhập mật khẩu" />
                     </div>
                     <div class="form-group">
                         <label>Password Again</label>
-                        <input type="password" class="form-control" name="user_passAgain" placeholder="Nhập mật khẩu" />
+                        <input type="password" class="form-control" name="passwordAgain" placeholder="Nhập mật khẩu" />
                     </div>
                     <div class="form-group">
                         <label>User Level</label>

@@ -33,8 +33,8 @@ function kiemtra () {
                     @foreach($user as $u)
                     <tr class="odd gradeX" align="center">
                         <td>{{$u->id}}</td>
-                        <td>{{$u->user_name}}</td>
-                        <td>{{$u->user_email}}</td>
+                        <td>{{$u->name}}</td>
+                        <td>{{$u->email}}</td>
                         <td>
                             @if($u->user_level == 1)
                             {{"Admin"}}

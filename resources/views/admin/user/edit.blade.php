@@ -5,7 +5,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <h1 class="page-header">User
-                    <small>{{$user->user_name}}</small>
+                    <small>{{$user->name}}</small>
                 </h1>
             </div>
             <!-- /.col-lg-12 -->
@@ -27,20 +27,20 @@
                 <input type="hidden" name="_token" value="{{csrf_token()}}"/>
                     <div class="form-group">
                         <label>User Name</label>
-                        <input class="form-control" name="user_name" placeholder="Nhập tên User" value="{{$user->user_name}}" />
+                        <input class="form-control" name="name" placeholder="Nhập tên User" value="{{$user->name}}" />
                     </div>
                     <div class="form-group">
                         <label>Email</label>
-                        <input class="form-control" value="{{$user->user_email}}" />
+                        <input class="form-control" value="{{$user->email}}" />
                     </div>
                     <div class="form-group">
-                        <input type="checkbox" id="changepass" name="user_passChange">
+                        <input type="checkbox" id="changepass" name="passChange">
                         <label>Change Password</label>
-                        <input type="password" class="form-control password" name="user_pass" placeholder="Nhập mật khẩu" disabled="" />
+                        <input type="password" class="form-control password" name="password" placeholder="Nhập mật khẩu" disabled="" />
                     </div>
                     <div class="form-group">
                         <label>Password Again</label>
-                        <input type="password" class="form-control password" name="user_passAgain" placeholder="Nhập mật khẩu" disabled="" />
+                        <input type="password" class="form-control password" name="passwordAgain" placeholder="Nhập mật khẩu" disabled="" />
                     </div>
                     <div class="form-group">
                         <label>User Level</label>

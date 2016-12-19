@@ -68,7 +68,7 @@ class PostController extends Controller
         $this->validate($request,
             [
                 'subcate_id'=>'required',
-                'post_title'=>'required|min:3|unique:post,post_title',
+                'post_title'=>'required|min:3|unique:post,post_title,'.$id.'',
                 'post_sum'=>'required|min:1|max:600',
                 'post_content'=>'required|min:10'
             ],

@@ -33,15 +33,17 @@ function kiemtra () {
                     </tr>
                 </thead>
                 <tbody>
-                    @foreach($subcate as $tl)
+                    @forelse($subcate as $tl)
                     <tr class="odd gradeX" align="center">
                         <td>{{$tl->id}}</td>
                         <td>{{$tl->subcate_name}}</td>
-                        <td>{{$tl->cate->cate_name}}</td>
+                        <td>{{isset($tl->cate->cate_name)?$tl->cate->cate_name:""}}</td>
                         <td class="center"><i class="fa fa-trash-o  fa-fw"></i><a href="admin/subcate/del/{{$tl->id}}" onclick="return kiemtra();"> Delete</a></td>
                         <td class="center"><i class="fa fa-pencil fa-fw"></i> <a href="admin/subcate/edit/{{$tl->id}}">Edit</a></td>
                     </tr>
-                    @endforeach
+                    @empty
+                        Khong co subcate nao
+                    @endforelse
                 </tbody>
             </table>
         </div>
