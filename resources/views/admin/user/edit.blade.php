@@ -45,21 +45,21 @@
                     <div class="form-group">
                         <label>User Level</label>
                         <label class="radio-inline">
-                            <input name="user_level" value="0" 
-                                @if($user->user_level == 0)
+                            <input name="level" value="0" 
+                                @if($user->level == 0)
                                 {{"checked"}}
                                 @endif type="radio">Member
                         </label>
                         <label class="radio-inline">
-                            <input name="user_level" 
-                            @if($user->user_level == 1)
+                            <input name="level" 
+                            @if($user->level == 1)
                                 {{"checked"}}
                                 @endif value="1" type="radio">Admin
                         </label>
                     </div>
                     <div class="form-group">
                         <label>User Info</label>
-                        <textarea name="user_info" class="form-control" rows="3">{{$user->user_info}}</textarea>
+                        <textarea name="info" class="form-control" rows="3">{{$user->info}}</textarea>
                     </div>
                     
                     <button type="submit" class="btn btn-default">User Edit</button>

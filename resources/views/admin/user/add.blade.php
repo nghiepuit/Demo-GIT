@@ -44,15 +44,15 @@
                     <div class="form-group">
                         <label>User Level</label>
                         <label class="radio-inline">
-                            <input name="user_level" value="0" checked="" type="radio">Member
+                            <input name="level" value="0" checked="" type="radio">Member
                         </label>
                         <label class="radio-inline">
-                            <input name="user_level" value="1" type="radio">Admin
+                            <input name="level" value="1" type="radio">Admin
                         </label>
                     </div>
                     <div class="form-group">
                         <label>User Info</label>
-                        <textarea name="user_info" class="form-control" rows="3"></textarea>
+                        <textarea name="info" class="form-control" rows="3"></textarea>
                     </div>
                     
                     <button type="submit" class="btn btn-default">User Add</button>

@@ -36,13 +36,13 @@ function kiemtra () {
                         <td>{{$u->name}}</td>
                         <td>{{$u->email}}</td>
                         <td>
-                            @if($u->user_level == 1)
+                            @if($u->level == 1)
                             {{"Admin"}}
                             @else
                             {{"Member"}}
                             @endif
                         </td>
-                        <td>{{$u->user_info}}</td>
+                        <td>{{$u->info}}</td>
                         <td class="center"><i class="fa fa-trash-o  fa-fw"></i><a href="admin/user/del/{{$u->id}}" onclick="return kiemtra();"> Delete</a></td>
                         <td class="center"><i class="fa fa-pencil fa-fw"></i> <a href="admin/user/edit/{{$u->id}}">Edit</a></td>
                     </tr>

@@ -28,7 +28,7 @@ class UserController extends Controller
                 'email'=>'required|unique:users,email',
     			'password'=>'required|min:8|max:15',
     			'passwordAgain'=>'required|same:password',
-    			'user_info'=>'required|max:500'
+    			'info'=>'required|max:500'
     		],
     		[
     			'name.required'=>'Bạn chưa nhập tên User',
@@ -42,15 +42,15 @@ class UserController extends Controller
     			'password.max' =>'Mật khẩu không được nhiều quá 15 kí tự',
     			'passwordAgain.required'=>'Nhập lại mật khẩu',
     			'passwordAgain.same'=>'Mật khẩu không khớp',
-    			'user_info.required'=>'Bạn chưa nhập giới thiệu'
+    			'info.required'=>'Bạn chưa nhập giới thiệu'
 
     		]);
     	$user = new User;
     	$user->name = $request->name;
         $user->email = $request->email;
     	$user->password = bcrypt($request->password);
-    	$user->user_level = $request->user_level;
-    	$user->user_info = $request->user_info;
+    	$user->level = $request->level;
+    	$user->info = $request->info;
     	$user->save();
     	return redirect('admin/user/add')->with('thongbao','Nhập User thành công');
 
@@ -72,13 +72,13 @@ class UserController extends Controller
                 'name.min'=>'Tên User phải có ít nhất 4 kí tự',
                 'name.max'=>'Tên User không được nhiều quá 15 kí tự',
                 'name.unique'=>'Tên User đã tồn tại',
-                'user_info.required'=>'Bạn chưa nhập thông tin'
+                'info.required'=>'Bạn chưa nhập thông tin'
 
             ]);
         $user = User::find($id);
         $user->name = $request->name;
-        $user->user_level = $request->user_level;
-        $user->user_info = $request->user_info;
+        $user->level = $request->level;
+        $user->info = $request->info;
         if ($request->passChange == "on") {
             # code...
             $this->validate($request,
@@ -86,7 +86,7 @@ class UserController extends Controller
                 'name'=>'required|unique:users,name,'.$id.'|min:4|max:15',
                 'password'=>'required|min:8|max:15',
                 'passwordAgain'=>'required|same:password',
-                'user_info'=>'required|max:500'
+                'info'=>'required|max:500'
             ],
             [
                 'name.required'=>'Bạn chưa nhập tên User',
@@ -98,7 +98,7 @@ class UserController extends Controller
                 'password.max' =>'Mật khẩu không được nhiều quá 15 kí tự',
                 'passwordAgain.required'=>'Nhập lại mật khẩu',
                 'passwordAgain.same'=>'Mật khẩu không khớp',
-                'user_info.required'=>'Bạn chưa nhập thông tin'
+                'info.required'=>'Bạn chưa nhập thông tin'
             ]);
             $user->password = bcrypt($request->password);
 
@@ -131,6 +131,10 @@ class UserController extends Controller
         }   else{
             return redirect('admin/login')->with('thongbao','Login failed');
         }
+    }
+    public function getLogout(){
+        Auth::logout();
+        return redirect('admin/login');
     }
     
     //
