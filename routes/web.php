@@ -29,6 +29,7 @@ Route::get('/', function () {
 /*Route::get('thu',function(){
 	return view('admin.slide.list');
 });*/
+
 Route::get('admin/login','UserController@getLoginAdmin');
 Route::post('admin/login','UserController@postLoginAdmin');
 Route::get('admin/logout','UserController@getLogout');
@@ -115,3 +116,7 @@ Route::group(['prefix'=>'admin','middleware'=>'adminLogin'],function(){
 		Route::get('add','CustomerController@getAdd');
 	});
 });
+
+Route::get('trangchu','PageController@trangchu');
+Route::get('contact','PageController@contact');
+Route::get('chuyenmuc','PageController@chuyenmuc');
