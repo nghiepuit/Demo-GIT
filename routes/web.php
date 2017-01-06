@@ -23,9 +23,7 @@ Route::get('myview','MyController@Myview');
 
 Route::get('truyen/{t}','MyController@truyenview');*/
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'PageController@trangchu');
 /*Route::get('thu',function(){
 	return view('admin.slide.list');
 });*/
@@ -36,6 +34,7 @@ Route::get('admin/logout','UserController@getLogout');
 Route::group(['prefix'=>'admin','middleware'=>'adminLogin'],function(){
 	Route::get('/','CateController@getList');
 	Route::group(['prefix'=>'cate'],function(){
+		Route::get('/','CateController@getList');
 		//admin/cate/list
 		Route::get('list','CateController@getList');
 
@@ -52,6 +51,7 @@ Route::group(['prefix'=>'admin','middleware'=>'adminLogin'],function(){
 
 	Route::group(['prefix'=>'subcate'],function(){
 		//admin/cate/list
+		Route::get('/','SubcateController@getList');
 		Route::get('list','SubcateController@getList');
 
 		Route::get('edit/{id}','SubcateController@getEdit');
@@ -67,6 +67,7 @@ Route::group(['prefix'=>'admin','middleware'=>'adminLogin'],function(){
 
 	Route::group(['prefix'=>'post'],function(){
 		//admin/cate/list
+		Route::get('/','PostController@getList');
 		Route::get('list','PostController@getList');
 
 		Route::get('edit/{id}','PostController@getEdit');
@@ -86,6 +87,7 @@ Route::group(['prefix'=>'admin','middleware'=>'adminLogin'],function(){
 
 	Route::group(['prefix'=>'user'],function(){
 		//admin/cate/list
+		Route::get('/','UserController@getList');
 		Route::get('list','UserController@getList');
 
 		Route::get('edit/{id}','UserController@getEdit');
@@ -101,6 +103,7 @@ Route::group(['prefix'=>'admin','middleware'=>'adminLogin'],function(){
 
 	Route::group(['prefix'=>'slide'] ,function(){
 		//admin/cate/list
+		Route::get('/','SlideController@getList');
 		Route::get('list','SlideController@getList');
 
 		Route::get('edit','SlideController@getEdit');
@@ -110,6 +113,7 @@ Route::group(['prefix'=>'admin','middleware'=>'adminLogin'],function(){
 
 	Route::group(['prefix'=>'customer'] ,function(){
 		//admin/cate/list
+		Route::get('/','CustomerController@getList');
 		Route::get('list','CustomerController@getList');
 
 		Route::get('edit','CustomerController@getEdit');
