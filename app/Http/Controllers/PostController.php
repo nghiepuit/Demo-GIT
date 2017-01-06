@@ -5,10 +5,12 @@ use Illuminate\Http\Request;
 use App\Cate;
 use App\Subcate;
 use App\Post;
+use App\Http\Helpers\ControllerHelper;
 
 class PostController extends Controller
 {
     //
+    use ControllerHelper;
 
     public function getList(){
         $post = Post::orderBy('id','DESC')->get();
@@ -41,7 +43,7 @@ class PostController extends Controller
             ]);
         $post = new Post;
         $post->post_title = $request->post_title;
-        $post->post_titlekd = changeTitle($request->post_title);
+        $post->post_titlekd = $this->changeTitle($request->post_title);
         $post->subcate_id = $request->subcate_id;
         $post->user_id = 1;
         $post->post_sum = $request->post_sum;
@@ -98,7 +100,7 @@ class PostController extends Controller
                 /*'post_content.max'=>'Nội dung không được vượt quá 10,000 kí tự'*/
             ]);
         $post->post_title = $request->post_title;
-        $post->post_titlekd = changeTitle($request->post_title);
+        $post->post_titlekd = $this->changeTitle($request->post_title);
         $post->subcate_id = $request->subcate_id;
         $post->user_id = 1;
         $post->post_sum = $request->post_sum;

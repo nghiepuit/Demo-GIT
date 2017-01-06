@@ -4,10 +4,13 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Customer;
 use App\Cate;
+use App\Http\Helpers\ControllerHelper;
 
 
 class CateController extends Controller
 {
+    use ControllerHelper;
+
     public function getList(){
         $cate = Cate::all();
         return view('admin.cate.list',['cate'=>$cate]);
@@ -33,7 +36,7 @@ class CateController extends Controller
 
         $cate=new Cate;
         $cate->cate_name = $request->cate_name;
-        $cate->cate_namekd = changeTitle($request->cate_name);
+        $cate->cate_namekd = $this->changeTitle($request->cate_name);
         $cate->cate_sum = $request->cate_sum;
         $cate->customer_id = $request->customer_id;
         if ($request->hasFile('cate_img')) {
@@ -73,7 +76,7 @@ class CateController extends Controller
                 'cate_name.max' =>'Tên chuyên mục phải từ 3-50 kí tự',
             ]);
         $cate->cate_name=$request->cate_name;
-        $cate->cate_namekd = changeTitle($request->cate_name);
+        $cate->cate_namekd = $this->changeTitle($request->cate_name);
         $cate->cate_sum = $request->cate_sum;
         $cate->customer_id=$request->customer_id;
         if ($request->hasFile('cate_img')) {

@@ -4,10 +4,12 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Subcate;
 use App\Cate;
+use App\Http\Helpers\ControllerHelper;
 
 class SubcateController extends Controller
 {
     //
+    use ControllerHelper;
 
     public function getList(){
         $subcate = Subcate::all();
@@ -34,7 +36,7 @@ class SubcateController extends Controller
 
         $subcate=new Subcate;
         $subcate->subcate_name = $request->subcate_name;
-        $subcate->subcate_namekd = changeTitle($request->subcate_name);
+        $subcate->subcate_namekd = $this->changeTitle($request->subcate_name);
         $subcate->subcate_sum = $request->subcate_sum;
         $subcate->cate_id = $request->cate_id;
         if ($request->hasFile('subcate_img')) {
@@ -72,7 +74,7 @@ class SubcateController extends Controller
                 'subcate_name.max' =>'Tên danh mục phải từ 3-50 kí tự',
             ]);
         $subcate->subcate_name=$request->subcate_name;
-        $subcate->subcate_namekd = changeTitle($request->subcate_name);
+        $subcate->subcate_namekd = $this->changeTitle($request->subcate_name);
         $subcate->subcate_sum = $request->subcate_sum;
         $subcate->cate_id = $request->cate_id;
         if ($request->hasFile('subcate_img')) {

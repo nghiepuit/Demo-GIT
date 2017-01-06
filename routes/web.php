@@ -34,6 +34,7 @@ Route::get('admin/login','UserController@getLoginAdmin');
 Route::post('admin/login','UserController@postLoginAdmin');
 Route::get('admin/logout','UserController@getLogout');
 Route::group(['prefix'=>'admin','middleware'=>'adminLogin'],function(){
+	Route::get('/','CateController@getList');
 	Route::group(['prefix'=>'cate'],function(){
 		//admin/cate/list
 		Route::get('list','CateController@getList');
