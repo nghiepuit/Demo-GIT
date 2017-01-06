@@ -11,24 +11,24 @@
                 <span class="icon-bar"></span>
               </button>
               <!-- LOGO -->
-              <!-- TEXT BASED LOGO -->
-              <a class="navbar-brand" href="trangchu">Mobifone</a>              
+              <!-- TEXT BASED LOGO phan--> 
+              <!-- <a class="navbar-brand" href="trangchu">Mobifone</a>        -->       
               <!-- IMG BASED LOGO  -->
-               <!-- <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="logo"></a>  -->            
+               <a class="navbar-brand " href="trangchu"><img class="logo_mobifone" src="img/mobifone_logo.png" alt="logo"></a>  
                      
             </div>
             <div id="navbar" class="navbar-collapse collapse">
               <ul id="top-menu" class="nav navbar-nav navbar-right main-nav">
-
-              @foreach($cate as $c)
+                            @foreach($cate as $c)
               @if($c->customer_id == 1)
                   <li class="dropdown">
-                    <a href="canhan/{{$c->cate_name}}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">{{$c->cate_name}}<span class="caret"></span></a>
+<a href="canhan/{{$c->cate_namekd}}" class="dropdown-toggle"  role="button" aria-expanded="false">{{$c->cate_name}}
+@if(count($c->subcate) > 0)<span class="caret"></span>@endif</a>
 
                     @if(count($c->subcate) > 0)
                       <ul class="dropdown-menu" role="menu">
                         @foreach($c->subcate as $sc)
-                          <li><a href="canhan/{{$c->cate_name}}/{{$sc->subcate_name}}">{{$sc->subcate_name}}</a></li>
+                          <li><a href="canhan/{{$c->cate_namekd}}/{{$sc->subcate_namekd}}">{{$sc->subcate_name}}</a></li>
                         @endforeach           
                       </ul>
                     @endif

@@ -2,9 +2,9 @@
 @section('content')
 
     <!--=========== BEGIN COURSE BANNER SECTION ================-->
-    <section id="imgBanner">
-      <h2>CÁ NHÂN</h2>
-    </section>
+    <div class="banner">
+      <img src="upload/cate/{{$cate1->cate_img}}" alt="">
+    </div>
     <!--=========== END COURSE BANNER SECTION ================-->
     
     <!--=========== BEGIN COURSE BANNER SECTION ================-->
@@ -14,37 +14,43 @@
           <!-- start course content -->
           <div class="col-lg-8 col-md-8 col-sm-8">
             <div class="courseArchive_content">
+              <!-- start blog archive  -->
               <div class="row">
-				@foreach($cate as $c)
-				@if($c->customer_id == 1)
-                <!-- start single course -->
-                <div class="col-lg-6 col-md-6 col-sm-6">
-                  <div class="single_course wow fadeInUp">
-                    <div class="singCourse_imgarea">
-                      <img src="img/course-1.jpg" />
-                      <div class="mask">                         
-                        <a href="canhan/{{$c->catename}}" class="course_more">XEM THÊM</a>
-                      </div>
+				      @foreach($subcate as $sc)
+                <!-- start single blog archive -->
+                <div class="col-lg-12 col-12 col-sm-12">
+                  <div class="single_blog_archive wow fadeInUp">
+                    <div class="blogimg_container">
+                      <a href="canhan/{{$cate1->cate_namekd}}/{{$sc->subcate_namekd}}" class="blog_img">
+                        <img alt="img" src="upload/subcate/{{$sc->subcate_img}}">
+                      </a>
                     </div>
-                    <div class="singCourse_content">
-                    <h3 class="singCourse_title"><a href="course-single.html">{{$c->cate_name}}</a></h3>
-                    <p>Tóm tắt của cate</p>
+                    <h2 class="blog_title"><a href="canhan/{{$cate1->cate_namekd}}/{{$sc->subcate_namekd}}"> {{$sc->subcate_name}}</a></h2>
+                    <div class="blog_commentbox">
+                      <p>Danh sách {{$sc->subcate_name}}</p>
+                      <p><i class="fa fa-calendar"></i>15 March 2015</p>
+                      <a href="#"><i class="fa fa-comments"></i>6 Bài viết</a>
                     </div>
-                    <div class="singCourse_author">
-                      <img src="img/author.jpg" alt="img">
-                      <p>Tên tác giả</p>
-                    </div>
+                    <p class="blog_summary">{{$sc->subcate_sum}}</p>
+                    <a class="blog_readmore" href="canhan/{{$cate1->cate_namekd}}/{{$sc->subcate_namekd}}">CHI TIẾT</a>
                   </div>
                 </div>
-                <!-- End single course -->
-				@endif
-				@endforeach
+                <!-- end single blog archive -->
+				      @endforeach
               </div>
-              <!-- start previous & next button -->
-              <div class="single_blog_prevnext">
-                <a href="#" class="prev_post wow fadeInLeft animated" style="visibility: visible; animation-name: fadeInLeft;"><i class="fa fa-angle-left"></i>Previous</a>
-                <a href="#" class="next_post wow fadeInRight animated" style="visibility: visible; animation-name: fadeInRight;">Next<i class="fa fa-angle-right"></i></a>
-              </div>
+              
+              <!-- end blog archive  -->
+              <!-- <nav>
+                <ul class="pagination wow fadeInLeft">
+                  <li><a href="#"><span aria-hidden="true">«</span><span class="sr-only">Previous</span></a></li>
+                  <li><a href="#">1</a></li>
+                  <li><a href="#">2</a></li>
+                  <li><a href="#">3</a></li>
+                  <li><a href="#">4</a></li>
+                  <li><a href="#">5</a></li>
+                  <li><a href="#"><span aria-hidden="true">»</span><span class="sr-only">Next</span></a></li>
+                </ul>
+              </nav> -->
             </div>
           </div>
           <!-- End course content -->
@@ -54,67 +60,31 @@
             <div class="courseArchive_sidebar">
               <!-- start single sidebar -->
               <div class="single_sidebar">
-                <h2>Events <span class="fa fa-angle-double-right"></span></h2>
+                <h2>Tin tức nổi bật <span class="fa fa-angle-double-right"></span></h2>
                 <ul class="news_tab">
+                @foreach($nb as $n)
                   <li>
                     <div class="media">
                       <div class="media-left">
                         <a href="#" class="news_img">
-                          <img alt="img" src="img/news.jpg" class="media-object">
+                          <img alt="img" src="upload/post/{{$n->post_img}}" class="media-object">
                         </a>
                       </div>
                       <div class="media-body">
-                       <a href="#">Dummy text of the printing and typesetting industry</a>
-                       <span class="feed_date">27.02.15</span>
+                       <a href="#">{{$n->post_title}}</a>
+                       <span class="feed_date">{{$n->created_at}}</span>
                       </div>
                     </div>
                   </li>
-                  <li>
-                    <div class="media">
-                      <div class="media-left">
-                        <a href="#" class="news_img">
-                          <img alt="img" src="img/news.jpg" class="media-object">
-                        </a>
-                      </div>
-                      <div class="media-body">
-                       <a href="#">Dummy text of the printing and typesetting industry</a>
-                       <span class="feed_date">28.02.15</span>                
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="media">
-                      <div class="media-left">
-                        <a href="#" class="news_img">
-                          <img alt="img" src="img/news.jpg" class="media-object">
-                        </a>
-                      </div>
-                      <div class="media-body">
-                       <a href="#">Dummy text of the printing and typesetting industry</a>
-                       <span class="feed_date">28.02.15</span>                
-                      </div>
-                    </div>
-                  </li>                  
+                @endforeach               
                 </ul>
               </div>
               <!-- End single sidebar -->
               <!-- start single sidebar -->
-              <div class="single_sidebar">
-                <h2>Quick Links <span class="fa fa-angle-double-right"></span></h2>
-                <ul>
-                  <li><a href="#">Link 1</a></li>
-                  <li><a href="#">Link 2</a></li>
-                  <li><a href="#">Link 3</a></li>
-                  <li><a href="#">Link 4</a></li>
-                  <li><a href="#">Link 5</a></li>
-                </ul>
-              </div>
-              <!-- End single sidebar -->
-              <!-- start single sidebar -->
-              <div class="single_sidebar">
+              <!-- <div class="single_sidebar">
                 <h2>Sponsor Add <span class="fa fa-angle-double-right"></span></h2>
                 <a class="side_add" href="#"><img src="img/side-add.jpg" alt="img"></a>
-              </div>
+              </div> -->
               <!-- End single sidebar -->
             </div>
           </div>
@@ -123,7 +93,5 @@
       </div>
     </section>
     <!--=========== END COURSE BANNER SECTION ================-->
-
-
 
 @endsection

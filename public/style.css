@@ -65,7 +65,8 @@ h1,h2,h3,h4,h5,h6{
 
 h2 {
   color: #313338;  
-  font-size: 30px;
+  font-size: 18px;
+
   font-weight: 700;
   line-height: 40px;
   margin: 0;
@@ -132,7 +133,9 @@ img{
 	float: left;
 	display: inline;
 	width: 100%;
-  background-color: #313b3d;	
+  background-color: #313b3d;
+  font-size: 14px;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;	
 }
 
 /*--------.menu_area-------- */
@@ -152,12 +155,12 @@ img{
   color: #fff;
 }
 .navbar-default {
-  background-color: #313b3d;
+  background-color: #fff;
   border-color: transparent;
 }
 #navbar{overflow-x: hidden;}
 .navbar-default .navbar-nav > li > a {
-  color: #fff;
+  color: #00579C;
   padding: 30px 15px;
   text-transform: uppercase;
   -webkit-transition: all 0.5s;
@@ -171,10 +174,10 @@ img{
   background-color: transparent;
 }
 .navbar-nav > li > .dropdown-menu {
-  background-color: #48575a; 
+  background-color: #00579C; 
 }
 .navbar-nav > li > .dropdown-menu:before { 
-  border-bottom: 15px solid #48575a; 
+  border-bottom: 15px solid #00579C; 
   border-left: 15px solid transparent;
   border-right: 15px solid transparent;
   content: "";
@@ -188,7 +191,7 @@ img{
   border-bottom: 1px dotted rgba(255, 255, 255, 0.3);
   color: #fff;
   display: block;  
-  opacity: 0.8;
+  /* opacity: 0.8; */
   padding: 10px;
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
@@ -442,7 +445,7 @@ img{
   display: inline-block;  
   text-align: center; 
   height: 5px;    
-  width: 50px;
+  width: 231px;
 }
 .title_two {
   padding-bottom: 0;
@@ -576,6 +579,9 @@ div[data-dimension] {
   text-align: center;
   width: 100%;
 }
+.singCourse_imgarea img{
+  height: 157px;
+}
 .singCourse_imgarea img {
   display: block;
   position: relative;
@@ -587,7 +593,7 @@ div[data-dimension] {
    transition: all 0.3s ease-in-out;
 }
 .singCourse_imgarea .mask {
-   background-color: rgba(49, 59, 61, 0.6);
+   background-color: #E5E5E5;
    -webkit-transform: translateX(-100%);
    -moz-transform: translateX(-100%);
    -o-transform: translateX(-100%);
@@ -629,7 +635,7 @@ div[data-dimension] {
   color: #fff;
   display: inline-block;
   font-size: 18px;
-  margin-top: 27%;
+  margin-top: 18%;
   padding: 10px;
   text-transform: uppercase;
   -webkit-transition: all 0.5s;
@@ -913,7 +919,7 @@ div[data-dimension] {
   float: left;
   display: inline;
   width: 100%;
-  background-color: #1e2223;
+  background-color: #E5E5E5;
   padding: 60px 0px;
 }
 .single_footer_widget {
@@ -923,21 +929,21 @@ div[data-dimension] {
   width: 100%;
 }
 .single_footer_widget > h3 {
-  color: #fff;
+  color: #666666;
   text-transform: uppercase;
   margin-bottom: 25px;
 }
 .single_footer_widget>p{
-  color: #fff;
+  color: #666666;
 }
 .footer_widget_nav li a {
-  font-size: 15px;
+  font-size: 12px;
   font-weight: bold;
   margin-bottom: 3px;
   display: block;
 }
 .footer_social li a {
-  color: #fff;
+  color: #666666;
   display: inline-block;
   float: left;
   font-size: 22px;
@@ -967,21 +973,16 @@ div[data-dimension] {
 /*--------------------*/
 /* COURSE ARCHIVE PAGE */
 /*--------------------*/
+.banner{
 
-#imgBanner {
-  background-image: url("img/banner.jpg");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  display: inline;
-  float: left;
-  height: 300px;
-  margin-top: 77px;
-  padding: 118px 0;
-  text-align: center;
-  width: 100%;
+    text-align: center;
+
 }
-#imgBanner h2 {
-  color: #fff;
+.banner img{
+  max-height: 300px;
+}
+.banner h2 {
+  color: #000 ;
   font-size: 72px;
   font-weight: bold;
   text-align: center;
@@ -1169,13 +1170,17 @@ div[data-dimension] {
 }
 .blog_img img {
   height: 100%;
-  width:100%;
+/*   width:100%; */
+max-height: 221px;
   -webkit-transition: all 1s ease; /* Safari and Chrome */
   -moz-transition: all 1s ease; /* Firefox */
   -ms-transition: all 1s ease; /* IE 9 */
   -o-transition: all 1s ease; /* Opera */
   transition: all 1s ease;
   transform: translate3d(0px, 0px, 0px);
+}
+.spe img{
+  max-height: 125px;
 }
 .blog_img:hover img {
   opacity: 0.8;
@@ -1346,7 +1351,7 @@ div[data-dimension] {
   display: inline-block;
   float: left;
   padding: 8px 16px;
-  color: #ccc;
+  color: #000;
   border:2px solid #ccc;
   text-transform: uppercase;
   -webkit-transition: all 0.5s;
@@ -1366,7 +1371,7 @@ div[data-dimension] {
   display: inline-block;
   float: right;
   padding: 8px 16px;
-  color: #ccc;
+  color: #000;
   border:2px solid #ccc;
   text-transform: uppercase;
   -webkit-transition: all 0.5s;
@@ -1830,4 +1835,8 @@ div[data-dimension] {
 @media(max-width:320px ){
 
 	
+}
+
+.logo_mobifone{
+  max-width: 188px;
 }

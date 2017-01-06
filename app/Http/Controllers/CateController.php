@@ -33,7 +33,23 @@ class CateController extends Controller
 
         $cate=new Cate;
         $cate->cate_name = $request->cate_name;
+        $cate->cate_namekd = changeTitle($request->cate_name);
+        $cate->cate_sum = $request->cate_sum;
         $cate->customer_id = $request->customer_id;
+        if ($request->hasFile('cate_img')) {
+            $file = $request->file('cate_img');
+            $name = $file->getClientOriginalName();
+            $cate_img = str_random(4)."_".$name;
+            while (file_exists("upload/cate/".$cate_img)) {
+                $cate_img = str_random(4)."_".$name;
+            }
+            $file->move("upload/cate",$cate_img);
+            $cate->cate_img = $cate_img;
+        } else{
+            $cate->cate_img = "";
+        }
+
+
         $cate->save();
         return redirect('admin/cate/add')->with('thongbao','Thêm thành công');
     }
@@ -57,7 +73,20 @@ class CateController extends Controller
                 'cate_name.max' =>'Tên chuyên mục phải từ 3-50 kí tự',
             ]);
         $cate->cate_name=$request->cate_name;
+        $cate->cate_namekd = changeTitle($request->cate_name);
+        $cate->cate_sum = $request->cate_sum;
         $cate->customer_id=$request->customer_id;
+        if ($request->hasFile('cate_img')) {
+            $file = $request->file('cate_img');
+            $name = $file->getClientOriginalName();
+            $cate_img = str_random(4)."_".$name;
+            while (file_exists("upload/cate/".$cate_img)) {
+                $cate_img = str_random(4)."_".$name;
+            }
+            $file->move("upload/cate",$cate_img);
+            //unlink("upload/cate/".$cate->cate_img);
+            $cate->cate_img = $cate_img;
+        }
         $cate->save();
         return redirect('admin/cate/edit/'.$id)->with('thongbao','Sửa thành công');
     }

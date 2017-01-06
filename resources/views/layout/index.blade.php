@@ -14,6 +14,7 @@
     <meta name="description" content="MOBIFONE THAI NGUYEN 2016">
     <meta name="author" content="">
     <title>MOBIFONE THAI NGUYEN</title>
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
     <base href="{{asset('')}}">
 
     <!-- Mobile Specific Metas
@@ -21,7 +22,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/icon" href="img/wpf-favicon.png"/>
+    <link rel="shortcut icon" type="image/icon" href="img/favicon.ico"/>
 
     <!-- CSS
     ================================================== -->       

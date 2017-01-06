@@ -119,4 +119,11 @@ Route::group(['prefix'=>'admin','middleware'=>'adminLogin'],function(){
 
 Route::get('trangchu','PageController@trangchu');
 Route::get('contact','PageController@contact');
-Route::get('chuyenmuc','PageController@chuyenmuc');
+Route::get('canhan','PageController@canhan');//list danh sach cate ca nhan
+Route::get('news','PageController@news');
+Route::get('news/{id}','PageController@newsNoidung');
+Route::get('events','PageController@events');
+Route::get('events/{id}','PageController@eventsNoidung');
+Route::get('canhan/{cate_namekd}','PageController@chuyenmuc');//list subcate (cate $id)
+Route::get('canhan/{cate_namekd}/{subcate_namekd}','PageController@loaitin');//list post (subcate $id)
+Route::get('canhan/{cate_namekd}/{subcate_namekd}/{post_titlekd}','PageController@tintuc');//tin tuc

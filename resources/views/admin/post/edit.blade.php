@@ -9,7 +9,7 @@
                 </h1>
             </div>
             <!-- /.col-lg-12 -->
-            <div class="col-lg-7" style="padding-bottom:120px">
+            <div class="col-lg-12" style="padding-bottom:120px">
             @if(count($errors)>0)
                 <div class="alert alert-danger">
                     @foreach($errors->all() as $err)
@@ -23,7 +23,7 @@
                     {{session('thongbao')}}
                 </div>
             @endif
-                <form action="admin/post/edit/{{$post->id}}" method="POST" enctype="mutipart/form-data">
+                <form action="admin/post/edit/{{$post->id}}" method="POST" enctype="multipart/form-data">
                 <input type="hidden" name="_token" value="{{csrf_token()}}"/>
                     <div class="form-group">
                         <label>Cate</label>
@@ -52,6 +52,13 @@
                     <div class="form-group">
                         <label>Post Title</label>
                         <input class="form-control" name="post_title" placeholder="Please Enter Post Title" value="{{$post->post_title}}" />
+                    </div>
+                    <div class="form-group">
+                        <label>Post Image</label>
+                        <p>
+                            <img width="200px" src="upload/post/{{$post->post_img}}" alt="">
+                        </p>
+                        <input class="form-control" type="file" name="post_img" />
                     </div>
                     <div class="form-group">
                         <label>Post Summary</label>

@@ -34,7 +34,21 @@ class SubcateController extends Controller
 
         $subcate=new Subcate;
         $subcate->subcate_name = $request->subcate_name;
+        $subcate->subcate_namekd = changeTitle($request->subcate_name);
+        $subcate->subcate_sum = $request->subcate_sum;
         $subcate->cate_id = $request->cate_id;
+        if ($request->hasFile('subcate_img')) {
+            $file = $request->file('subcate_img');
+            $name = $file->getClientOriginalName();
+            $subcate_img = str_random(4)."_".$name;
+            while (file_exists("upload/subcate/".$subcate_img)) {
+                $subcate_img = str_random(4)."_".$name;
+            }
+            $file->move("upload/subcate",$subcate_img);
+            $subcate->subcate_img = $subcate_img;
+        } else{
+            $subcate->subcate_img = "";
+        }
         $subcate->save();
         return redirect('admin/subcate/add')->with('thongbao','Them thanh cong');
     }
@@ -58,7 +72,20 @@ class SubcateController extends Controller
                 'subcate_name.max' =>'Tên danh mục phải từ 3-50 kí tự',
             ]);
         $subcate->subcate_name=$request->subcate_name;
+        $subcate->subcate_namekd = changeTitle($request->subcate_name);
+        $subcate->subcate_sum = $request->subcate_sum;
         $subcate->cate_id = $request->cate_id;
+        if ($request->hasFile('subcate_img')) {
+            $file = $request->file('subcate_img');
+            $name = $file->getClientOriginalName();
+            $subcate_img = str_random(4)."_".$name;
+            while (file_exists("upload/subcate/".$subcate_img)) {
+                $subcate_img = str_random(4)."_".$name;
+            }
+            $file->move("upload/subcate",$subcate_img);
+            //unlink("upload/subcate/".$subcate->subcate_img);
+            $subcate->subcate_img = $subcate_img;
+        }
         $subcate->save();
         return redirect('admin/subcate/edit/'.$id)->with('thongbao','Sửa thành công');
     }

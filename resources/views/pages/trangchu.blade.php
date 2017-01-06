@@ -10,29 +10,34 @@
             <div id="slides">
               <ul class="slides-container">                          
                 <li>
-                  <img src="img/slider/2.jpg" alt="img">
+                  <img src="img/slider/s4.jpg" alt="img">
                    <div class="slider_caption">
-                    <h2>Largest & Beautiful University</h2>
-                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-                    <a class="slider_btn" href="#">Know More</a>
+                    <h2>TẦM NHÌN</h2>
+                    <p>Với những thay đổi mang tính chiến lược, tầm nhìn 2015-2020 của MobiFone được thể hiện rõ nét trong thông điệp “Kết nối giá trị, khơi dậy tiềm năng”.</p>
+                    <a class="slider_btn" href="#">Chi tiết</a>
                   </div>
                   </li>
                 <!-- Start single slider-->
                 <li>
-                  <img src="img/slider/3.jpg" alt="img">
-                   <div class="slider_caption slider_right_caption">
-                    <h2>Better Education Environment</h2>
-                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search</p>
-                    <a class="slider_btn" href="#">Know More</a>
+                  <img src="img/slider/s2.jpg" alt="img">
+                   <div class="slider_caption">
+                    <h2>SỨ MỆNH</h2>
+                    <p>Với MobiFone, sứ mệnh của chúng tôi là đem lại những sản phẩm và dịch vụ kết nối mỗi người dân, gia đình, doanh nghiệp trong một hệ sinh thái, nơi những nhu cầu trong cuộc sống, công việc, học tập và giải trí được phát hiện, đánh thức và thỏa mãn nhằm đạt được sự  hài lòng, phát triển và hạnh phúc.</p>
+                    <a class="slider_btn" href="#">Chi tiết</a>
                   </div>
                 </li>
                 <!-- Start single slider-->
                 <li>
-                  <img src="img/slider/4.jpg" alt="img">
+                  <img src="img/slider/s3.jpg" alt="img">
                    <div class="slider_caption">
-                    <h2>Find out you in better way</h2>
-                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search</p>
-                    <a class="slider_btn" href="#">Know More</a>
+                    <h2>Cam kết khách hàng</h2>
+                    <p>Mỗi khi gặp khách hàng, chúng ta sẽ:
+                    Đón tiếp mỗi khách hàng với lời chào, cử chỉ, nụ cười, ánh mắt thân thiện. 
+                    Nếu có thể, gọi tên khách hàng;
+                    Lắng nghe và phục vụ khách hàng với thái độ tôn trọng;
+                    Cố gắng tìm hiểu và dự đoán nhu cầu của khách hàng nhằm đáp ứng hơn những mong đợi của khách hàng;
+                    Cung cấp thông tin đúng về tất cả các dịch vụ, sản phẩm của MobiFone và trả lời nhanh chóng, chính xác các câu hỏi của khách hàng;</p>
+                    <a class="slider_btn" href="#">Chi tiết</a>
                   </div>
                 </li>
               </ul>
@@ -54,16 +59,19 @@
         <!-- Start about us area -->
         <div class="col-lg-6 col-md-6 col-sm-6">
           <div class="aboutus_area wow fadeInLeft">
-            <h2 class="titile">About Us</h2>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <h2 class="titile">Lịch sử hình thành</h2>
+            <p>MobiFone được thành lập ngày 16/04/1993 với tên gọi ban đầu là Công ty thông tin di động. Ngày 01/12/2014, Công ty được chuyển đổi thành Tổng công ty Viễn thông MobiFone, trực thuộc Bộ Thông tin và Truyền thông, kinh doanh trong các lĩnh vực: dịch vụ viễn thông truyền thống, VAS, Data, Internet & truyền hình IPTV/cable TV, sản phẩm khách hàng doanh nghiệp, dịch vụ công nghệ thông tin, bán lẻ và phân phối và đầu tư nước ngoài.</br>
+              </br>
+            Tại Việt Nam, MobiFone là một trong ba mạng di động lớn nhất với hơn 30% thị phần. Chúng tôi cũng là nhà cung cấp mạng thông tin di động đầu tiên và duy nhất tại Việt Nam được bình chọn là thương hiệu được khách hàng yêu thích trong 6 năm liền.</br>
+
+            Hiện nay, MobiFone có gần 50 triệu thuê bao với gần 30.000 trạm 2G và 20.000 trạm 3G. Tổng doanh thu năm 2014 của MobiFone đạt xấp xỉ 2 tỷ đô la Mỹ. </p>
           </div>
         </div>
         <div class="col-lg-6 col-md-6 col-sm-6">
           <div class="newsfeed_area wow fadeInRight">
             <ul class="nav nav-tabs feed_tabs" id="myTab2">
-              <li class="active"><a href="#news" data-toggle="tab">News</a></li>
-              <li><a href="#notice" data-toggle="tab">Notice</a></li>
-              <li><a href="#events" data-toggle="tab">Events</a></li>         
+              <li class="active"><a href="#news" data-toggle="tab">Tin tức</a></li>
+              <li><a href="#events" data-toggle="tab">Sự kiện</a></li>         
             </ul>
 
             <!-- Tab panes -->
@@ -71,179 +79,44 @@
               <!-- Start news tab content -->
               <div class="tab-pane fade in active" id="news">                
                 <ul class="news_tab">
+                @foreach($news as $n)
                   <li>
                     <div class="media">
                       <div class="media-left">
-                        <a class="news_img" href="#">
-                          <img class="media-object" src="img/news.jpg" alt="img">
+                        <a class="news_img" href="news/{{$n->id}}">
+                          <img class="media-object" src="upload/news/{{$n->img}}" alt="img">
                         </a>
                       </div>
                       <div class="media-body">
-                       <a href="#">Dummy text of the printing and typesetting industry</a>
-                       <span class="feed_date">27.02.15</span>
+                       <a href="news/{{$n->id}}">{{$n->title}}</a>
+                       <span class="feed_date">{{$n->updated_at}}</span>
                       </div>
                     </div>                    
                   </li>
-                  <li>
-                    <div class="media">
-                      <div class="media-left">
-                        <a class="news_img" href="#">
-                          <img class="media-object" src="img/news.jpg" alt="img">
-                        </a>
-                      </div>
-                      <div class="media-body">
-                       <a href="#">Dummy text of the printing and typesetting industry</a>
-                       <span class="feed_date">28.02.15</span>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="media">
-                      <div class="media-left">
-                        <a class="news_img" href="#">
-                          <img class="media-object" src="img/news.jpg" alt="img">
-                        </a>
-                      </div>
-                      <div class="media-body">
-                       <a href="#">Dummy text of the printing and typesetting industry</a>
-                       <span class="feed_date">28.02.15</span>
-                      </div>
-                    </div>
-                  </li>
+                @endforeach
                 </ul>                
-                <a class="see_all" href="#">See All</a>
+                <a class="see_all" href="news">Xem tất cả</a>
               </div>
-              <!-- Start notice tab content -->  
-              <div class="tab-pane fade " id="notice">
-                <div class="single_notice_pane">
-                  <ul class="news_tab">
-                    <li>
-                      <div class="media">
-                        <div class="media-left">
-                          <a class="news_img" href="#">
-                            <img class="media-object" src="img/news.jpg" alt="img">
-                          </a>
-                        </div>
-                        <div class="media-body">
-                         <a href="#">Dummy text of the printing and typesetting industry</a>
-                         <span class="feed_date">27.02.15</span>
-                        </div>
-                      </div>                   
-                    </li>
-                    <li>
-                      <div class="media">
-                        <div class="media-left">
-                          <a class="news_img" href="#">
-                            <img class="media-object" src="img/notice.jpg" alt="img">
-                          </a>
-                        </div>
-                        <div class="media-body">
-                         <a href="#">Dummy text of the printing and typesetting industry</a>
-                         <span class="feed_date">28.02.15</span>             
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="media">
-                        <div class="media-left">
-                          <a class="news_img" href="#">
-                            <img class="media-object" src="img/notice.jpg" alt="img">
-                          </a>
-                        </div>
-                        <div class="media-body">
-                         <a href="#">Dummy text of the printing and typesetting industry</a>
-                         <span class="feed_date">28.02.15</span>             
-                        </div>
-                      </div>
-                    </li>                                    
-                  </ul>
-                  <ul class="news_tab">
-                    <li>
-                      <div class="media">
-                        <div class="media-left">
-                          <a class="news_img" href="#">
-                            <img class="media-object" src="img/notice.jpg" alt="img">
-                          </a>
-                        </div>
-                        <div class="media-body">
-                         <a href="#">Contrary to popular belief, Lorem Ipsum is not simply random text</a>
-                         <span class="feed_date">27.02.15</span>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="media">
-                        <div class="media-left">
-                          <a class="news_img" href="#">
-                            <img class="media-object" src="img/notice.jpg" alt="img">
-                          </a>
-                        </div>
-                        <div class="media-body">
-                         <a href="#">Dummy text of the printing and typesetting industry</a>
-                         <span class="feed_date">28.02.15</span>          
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="media">
-                        <div class="media-left">
-                          <a class="news_img" href="#">
-                            <img class="media-object" src="img/notice.jpg" alt="img">
-                          </a>
-                        </div>
-                        <div class="media-body">
-                         <a href="#">Contrary to popular belief, Lorem Ipsum is not simply random text</a>
-                         <span class="feed_date">28.02.15</span>
-                        </div>
-                      </div>
-                    </li>                                    
-                  </ul>
-                </div>               
-              </div>
-              <!-- Start events tab content -->
+
               <div class="tab-pane fade " id="events">
                 <ul class="news_tab">
+                @foreach($events as $e)
                   <li>
                     <div class="media">
                       <div class="media-left">
-                        <a class="news_img" href="#">
-                          <img class="media-object" src="img/news.jpg" alt="img">
+                        <a class="news_img" href="events/{{$e->id}}">
+                          <img class="media-object" src="upload/events/{{$e->img}}" alt="img">
                         </a>
                       </div>
                       <div class="media-body">
-                       <a href="#">Dummy text of the printing and typesetting industry</a>
+                       <a href="events/{{$e->id}}">{{$e->title}}</a>
                        <span class="feed_date">27.02.15</span>
                       </div>
                     </div>
                   </li>
-                  <li>
-                    <div class="media">
-                      <div class="media-left">
-                        <a class="news_img" href="#">
-                          <img class="media-object" src="img/news.jpg" alt="img">
-                        </a>
-                      </div>
-                      <div class="media-body">
-                       <a href="#">Dummy text of the printing and typesetting industry</a>
-                       <span class="feed_date">28.02.15</span>                
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="media">
-                      <div class="media-left">
-                        <a class="news_img" href="#">
-                          <img class="media-object" src="img/news.jpg" alt="img">
-                        </a>
-                      </div>
-                      <div class="media-body">
-                       <a href="#">Dummy text of the printing and typesetting industry</a>
-                       <span class="feed_date">28.02.15</span>                
-                      </div>
-                    </div>
-                  </li>                  
+                @endforeach
                 </ul>
-                <a class="see_all" href="#">See All</a>
+                <a class="see_all" href="events">Xem tất cả</a>
               </div>
             </div>
           </div>
@@ -264,7 +137,7 @@
               <div class="row">
                 <div class="col-lg-12 col-md-12"> 
                   <div class="title_area">
-                    <h2 class="title_two">Why Us</h2>
+                    <h2 class="title_two">Về CHÚNG TÔI</h2>
                     <span></span> 
                   </div>
                 </div>
@@ -277,8 +150,8 @@
                     <div class="whyus_icon">
                       <span class="fa fa-desktop"></span>
                     </div>
-                    <h3>Technology</h3>
-                    <p>when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+                    <h3>Công nghệ</h3>
+                    <p>Mobifone luôn dẫn đầu trong triển khai công nghệ tại Việt Nam</p>
                   </div>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-3">
@@ -286,8 +159,8 @@
                     <div class="whyus_icon">
                       <span class="fa fa-users"></span>
                     </div>
-                    <h3>Best Tutor</h3>
-                    <p>when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+                    <h3>Tuyển dụng</h3>
+                    <p>Hàng ngàn cơ hội việc làm cho sinh viên mới ra trường mỗi năm</p>
                   </div>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-3">
@@ -295,8 +168,8 @@
                     <div class="whyus_icon">
                       <span class="fa fa-flask"></span>
                     </div>
-                    <h3>Practical Training</h3>
-                    <p>when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+                    <h3>Phân tích dữ liệu</h3>
+                    <p>Trung tâm nghiên cứu không ngừng phân tích nhu cầu của người dùng</p>
                   </div>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-3">
@@ -304,8 +177,8 @@
                     <div class="whyus_icon">
                       <span class="fa fa-support"></span>
                     </div>
-                    <h3>Support</h3>
-                    <p>when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+                    <h3>Hỗ trợ</h3>
+                    <p>Mobifone luôn cố gắng phục vụ hỗ trợ khách hàng chuyên nghiệp nhất</p>
                   </div>
                 </div>
               </div>
@@ -316,47 +189,6 @@
       </div>
       <!-- End why us top -->
 
-      <!-- Start why us bottom -->
-      <div class="row">        
-        <div class="col-lg-12 col-sm-12">
-          <div class="whyus_bottom">            
-            <div class="slider_overlay"></div>
-            <div class="container">               
-              <div class="skills">                
-                <!-- START SINGLE SKILL-->
-                <div class="col-lg-3 col-md-3 col-sm-3">
-                 <div class="single_skill wow fadeInUp">
-                   <div id="myStat" data-dimension="150" data-text="35%" data-info="" data-width="10" data-fontsize="25" data-percent="35" data-fgcolor="#999" data-bgcolor="#fff"  data-icon="fa-task"></div>
-                    <h4>Repeate Learners</h4>                      
-                  </div>
-                </div>
-                <!-- START SINGLE SKILL-->
-                <div class="col-lg-3 col-md-3 col-sm-3">
-                  <div class="single_skill wow fadeInUp">
-                    <div id="myStathalf2" data-dimension="150" data-text="90%" data-info="" data-width="10" data-fontsize="25" data-percent="90" data-fgcolor="#999" data-bgcolor="#fff"  data-icon="fa-task"></div>
-                    <h4>Success Rate</h4>
-                  </div>
-                </div>
-                <!-- START SINGLE SKILL-->
-                <div class="col-lg-3 col-md-3 col-sm-3">                 
-                  <div class="single_skill wow fadeInUp">
-                    <div id="myStat2" data-dimension="150" data-text="100%" data-info="" data-width="10" data-fontsize="25" data-percent="100" data-fgcolor="#999" data-bgcolor="#fff"  data-icon="fa-task"></div>
-                    <h4>Student Engagement</h4>
-                  </div>
-                </div>
-                <!-- START SINGLE SKILL-->
-                <div class="col-lg-3 col-md-3 col-sm-3">                 
-                  <div class="single_skill wow fadeInUp">
-                    <div id="myStat3" data-dimension="150" data-text="65%" data-info="" data-width="10" data-fontsize="25" data-percent="65" data-fgcolor="#999" data-bgcolor="#fff"  data-icon="fa-task"></div>
-                    <h4>Certified Courses</h4>
-                  </div>
-                </div>
-              </div>
-            </div>            
-          </div>
-        </div>        
-      </div>
-      <!-- End why us bottom -->
     </section>
     <!--=========== END WHY US SECTION ================-->
 
@@ -367,7 +199,7 @@
         <div class="row">
           <div class="col-lg-12 col-md-12"> 
             <div class="title_area">
-              <h2 class="title_two">Our Courses</h2>
+              <h2 class="title_two">GÓI CƯỚC CÁ NHÂN</h2>
               <span></span> 
             </div>
           </div>
@@ -378,120 +210,23 @@
           <div class="col-lg-12 col-md-12 col-sm-12">
             <div class="ourCourse_content">
               <ul class="course_nav">
+              @foreach($post as $p)
                 <li>
                   <div class="single_course">
                     <div class="singCourse_imgarea">
-                      <img src="img/course-1.jpg" />
+                      <img src="upload/post/{{$p->post_img}}" />
                       <div class="mask">                         
-                        <a href="#" class="course_more">View Course</a>
+                        <a href="canhan/di-dong/goi-cuoc/{{$p->post_titlekd}}" class="course_more">XEM THÊM</a>
                       </div>
                     </div>
                     <div class="singCourse_content">
-                    <h3 class="singCourse_title"><a href="#">Introduction To Matrix</a></h3>
-                    <p class="singCourse_price"><span>$20</span> Per One Month</p>
-                    <p>when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
-                    </div>
-                    <div class="singCourse_author">
-                      <img src="img/author.jpg" alt="img">
-                      <p>Richard Remus, Teacher</p>
+                    <h3 class="singCourse_title"><a href="canhan/di-dong/goi-cuoc/{{$p->post_titlekd}}">{{$p->post_title}}</a></h3>
+                    <p>{!!$p->post_sum!!}</p>
                     </div>
                   </div>
                 </li>
-                <li>
-                  <div class="single_course">
-                    <div class="singCourse_imgarea">
-                      <img src="img/course-2.jpg" />
-                      <div class="mask">                         
-                        <a href="#" class="course_more">View Course</a>
-                      </div>
-                    </div>
-                    <div class="singCourse_content">
-                    <h3 class="singCourse_title"><a href="#">Introduction To Matrix</a></h3>
-                    <p class="singCourse_price"><span>$20</span> Per One Month</p>
-                    <p>when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
-                    </div>
-                    <div class="singCourse_author">
-                      <img src="img/author.jpg" alt="img">
-                      <p>Richard Remus, Teacher</p>
-                    </div>
-                  </div>
-                </li> 
-                <li>
-                  <div class="single_course">
-                    <div class="singCourse_imgarea">
-                      <img src="img/course-1.jpg" />
-                      <div class="mask">                         
-                        <a href="#" class="course_more">View Course</a>
-                      </div>
-                    </div>
-                    <div class="singCourse_content">
-                    <h3 class="singCourse_title"><a href="#">Introduction To Matrix</a></h3>
-                    <p class="singCourse_price"><span>$20</span> Per One Month</p>
-                    <p>when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
-                    </div>
-                    <div class="singCourse_author">
-                      <img src="img/author.jpg" alt="img">
-                      <p>Richard Remus, Teacher</p>
-                    </div>
-                  </div>
-                </li>  
-                <li>
-                  <div class="single_course">
-                    <div class="singCourse_imgarea">
-                      <img src="img/course-2.jpg" />
-                      <div class="mask">                         
-                        <a href="#" class="course_more">View Course</a>
-                      </div>
-                    </div>
-                    <div class="singCourse_content">
-                    <h3 class="singCourse_title"><a href="#">Introduction To Matrix</a></h3>
-                    <p class="singCourse_price"><span>$20</span> Per One Month</p>
-                    <p>when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
-                    </div>
-                    <div class="singCourse_author">
-                      <img src="img/author.jpg" alt="img">
-                      <p>Richard Remus, Teacher</p>
-                    </div>
-                  </div>
-                </li>
-                <li>
-                  <div class="single_course">
-                    <div class="singCourse_imgarea">
-                      <img src="img/course-1.jpg" />
-                      <div class="mask">                         
-                        <a href="#" class="course_more">View Course</a>
-                      </div>
-                    </div>
-                    <div class="singCourse_content">
-                    <h3 class="singCourse_title"><a href="#">Introduction To Matrix</a></h3>
-                    <p class="singCourse_price"><span>$20</span> Per One Month</p>
-                    <p>when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
-                    </div>
-                    <div class="singCourse_author">
-                      <img src="img/author.jpg" alt="img">
-                      <p>Richard Remus, Teacher</p>
-                    </div>
-                  </div>
-                </li> 
-                <li>
-                  <div class="single_course">
-                    <div class="singCourse_imgarea">
-                      <img src="img/course-2.jpg" />
-                      <div class="mask">                         
-                        <a href="#" class="course_more">View Course</a>
-                      </div>
-                    </div>
-                    <div class="singCourse_content">
-                    <h3 class="singCourse_title"><a href="#">Introduction To Matrix</a></h3>
-                    <p class="singCourse_price"><span>$20</span> Per One Month</p>
-                    <p>when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
-                    </div>
-                    <div class="singCourse_author">
-                      <img src="img/author.jpg" alt="img">
-                      <p>Richard Remus, Teacher</p>
-                    </div>
-                  </div>
-                </li>                
+              @endforeach
+            
               </ul>
             </div>
           </div>
@@ -502,9 +237,9 @@
     <!--=========== END OUR COURSES SECTION ================-->  
 
     <!--=========== BEGIN OUR TUTORS SECTION ================-->
-    <section id="ourTutors">
+    <!-- <section id="ourTutors">
       <div class="container">
-       <!-- Our courses titile -->
+       Our courses titile
         <div class="row">
           <div class="col-lg-12 col-md-12"> 
             <div class="title_area">
@@ -513,13 +248,13 @@
             </div>
           </div>
         </div>
-        <!-- End Our courses titile -->
-
-        <!-- Start Our courses content -->
+        End Our courses titile
+    
+        Start Our courses content
         <div class="row">
           <div class="col-lg-12 col-md-12 col-sm-12">
             <div class="ourTutors_content">
-              <!-- Start Tutors nav -->
+              Start Tutors nav
               <ul class="tutors_nav">
                 <li>
                   <div class="single_tutors">
@@ -645,9 +380,9 @@
             </div>
           </div>
         </div>
-        <!-- End Our courses content -->
+        End Our courses content
       </div>
-    </section>
+    </section> -->
     <!--=========== END OUR TUTORS SECTION ================-->
 
     <!--=========== BEGIN STUDENTS TESTIMONIAL SECTION ================-->

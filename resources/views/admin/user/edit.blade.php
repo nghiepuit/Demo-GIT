@@ -31,7 +31,7 @@
                     </div>
                     <div class="form-group">
                         <label>Email</label>
-                        <input class="form-control" value="{{$user->email}}" />
+                        <input class="form-control" value="{{$user->email}}" disabled=""/>
                     </div>
                     <div class="form-group">
                         <input type="checkbox" id="changepass" name="passChange">

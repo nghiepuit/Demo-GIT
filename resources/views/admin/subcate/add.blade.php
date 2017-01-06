@@ -23,11 +23,15 @@
                     {{session('thongbao')}}
                 </div>
             @endif
-                <form action="admin/subcate/add" method="POST">
+                <form action="admin/subcate/add" method="POST" enctype="multipart/form-data">
                     <input type="hidden" name="_token" value="{{csrf_token()}}"/>
                     <div class="form-group">
                         <label>SubCategory Name</label>
                         <input class="form-control" name="subcate_name" placeholder="Please Enter Sub Category Name" />
+                    </div>
+                    <div class="form-group">
+                        <label>SubCategory Image</label>
+                        <input class="form-control" type="file" name="subcate_img" />
                     </div>
                     <div class="form-group">
                         <label>Catelogy</label>
@@ -36,6 +40,10 @@
                             <option value="{{$tl->id}}">{{$tl->cate_name}}</option>
                         @endforeach
                         </select>
+                    </div>
+                    <div class="form-group">
+                        <label>SubCategory Description</label>
+                        <textarea class="form-control" rows="3" name="subcate_sum"></textarea>
                     </div>
                     <button type="submit" class="btn btn-default">Category Add</button>
                     <button type="reset" class="btn btn-default">Reset</button>

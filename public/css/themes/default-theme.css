@@ -39,15 +39,15 @@ Author URI : http://www.wpfreeware.com/
 .titile:after{ 
   background-color: #78adc9;
 }
-.feed_tabs{border-bottom: 2px solid #78adc9;}
+.feed_tabs{border-bottom: 2px solid #00579C;}
 .feed_tabs li.active a,.feed_tabs li.active a:hover,.feed_tabs li.active a:focus{
   border:2px solid;
-  color: #78ADC9 !important; 
-  border-color: #78ADC9 #78ADC9 transparent;
+  color: #00579C !important; 
+  border-color: #00579C #00579C transparent;
 }
 
 .feed_tabs li a:hover{ 
-  background-color: #78adc9;
+  background-color: #00579C;
 }
 .news_tab .media-body > a :hover{
   color: #78ADC9;
@@ -63,7 +63,7 @@ Author URI : http://www.wpfreeware.com/
   background-color: #78adc9;  
 }
 .title_area span{  
-  background: none repeat scroll 0 0 #78ADC9;
+  background: none repeat scroll 0 0 #277CBE;
 }
 .whyus_icon{
   background: none repeat scroll 0 0 #78ADC9;  
@@ -106,7 +106,7 @@ Author URI : http://www.wpfreeware.com/
   background-color: #78ADC9;
 }
 .single_blog_archive {
-  border-bottom: 3px solid #78adc9;  
+  border-bottom: 3px solid #02589C;  
 }
 .blog_title a:hover{
   color: #78ADC9;
@@ -180,13 +180,13 @@ Author URI : http://www.wpfreeware.com/
   color: #ffffff;
 }
 .footer_widget_nav li a {
-  color: #78adc9;
+  color: #666666;
 }
 .dropdown-menu > .active > a, .dropdown-menu > .active > a:focus, .dropdown-menu > .active > a:hover {
   color: #78adc9 !important;  
 }
 .single_sidebar > h2 {
-  background-color: #78adc9;
+  background-color: #00579C;
 }
 .singlecourse_price {  
   color: #78ADC9;
