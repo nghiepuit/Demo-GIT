@@ -49,11 +49,11 @@
                   <div class="col-lg-6 col-md-6 col-sm-6">
                     <div class="single_blog_archive wow fadeInUp">
                       <div class="blogimg_container">
-                        <a class="blog_img" href="canhan/{{$cate1->cate_namekd}}/{{$subcate->subcate_namekd}}">
+                        <a class="blog_img" href="doanhnghiep/{{$cate1->cate_namekd}}/{{$subcate->subcate_namekd}}">
                           <img src="upload/post/{{$post->post_img}}" alt="img">
                         </a>
                       </div>
-                      <h2 class="blog_title"><a href="canhan/{{$cate1->cate_namekd}}/{{$subcate->subcate_namekd}}"> {{$post->post_title}}</a></h2>
+                      <h2 class="blog_title"><a href="doanhnghiep/{{$cate1->cate_namekd}}/{{$subcate->subcate_namekd}}"> {{$post->post_title}}</a></h2>
                       <div class="blog_commentbox">
                         <p><i class="fa fa-user"></i>Mobifone</p>
                         <p><i class="fa fa-calendar"></i>15 March 2015</p>
@@ -61,7 +61,7 @@
                       <div>
                       	<p class="blog_summary">{!!$post->post_sum!!}</p>
                       </div>
-                      <a href="canhan/{{$cate1->cate_namekd}}/{{$subcate->subcate_namekd}}/{{$post->post_titlekd}}" class="blog_readmore">Chi tiết</a>
+                      <a href="doanhnghiep/{{$cate1->cate_namekd}}/{{$subcate->subcate_namekd}}/{{$post->post_titlekd}}" class="blog_readmore">Chi tiết</a>
                     </div>
                   </div>
 				@endforeach

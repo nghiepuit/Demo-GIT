@@ -35,6 +35,9 @@ class PageController extends Controller
     function canhan(){
     	return view('pages.canhan');
     }
+    function doanhnghiep(){
+        return view('doanhnghiep.doanhnghiep');
+    }
     function news(){
     	return view('pages.news');
     }
@@ -68,5 +71,24 @@ class PageController extends Controller
     	$post = Post::where('post_titlekd',$post_titlekd)->first();
     	$p = Post::where('subcate_id',$subcate->id)->paginate(2);
     	return view('pages.tintuc',['cate1'=>$cate,'subcate'=>$subcate,'post'=>$post,'p'=>$p]);
+    }
+
+    function dnchuyenmuc($cate_namekd){
+        $cate = Cate::where('cate_namekd',$cate_namekd)->first();
+        $subcate = Subcate::where('cate_id',$cate->id)->paginate(5);
+        return view('doanhnghiep.chuyenmuc',['cate1'=>$cate,'subcate'=>$subcate]);
+    }
+    function dnloaitin($cate_namekd,$subcate_namekd){
+        $cate = Cate::where('cate_namekd',$cate_namekd)->first();
+        $subcate = Subcate::where('subcate_namekd',$subcate_namekd)->first();
+        $post = Post::where('subcate_id',$subcate->id)->paginate(5);
+        return view('doanhnghiep.loaitin',['cate1'=>$cate,'subcate'=>$subcate,'post'=>$post]);
+    }
+    function dntintuc($cate_namekd,$subcate_namekd,$post_titlekd){
+        $cate = Cate::where('cate_namekd',$cate_namekd)->first();
+        $subcate = Subcate::where('subcate_namekd',$subcate_namekd)->first();
+        $post = Post::where('post_titlekd',$post_titlekd)->first();
+        $p = Post::where('subcate_id',$subcate->id)->paginate(2);
+        return view('doanhnghiep.tintuc',['cate1'=>$cate,'subcate'=>$subcate,'post'=>$post,'p'=>$p]);
     }
 }

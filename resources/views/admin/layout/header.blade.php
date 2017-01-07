@@ -7,7 +7,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="admin/cate/list">Admin Area - Mobifone Thai Nguyen</a>
+        <a class="navbar-brand" href="" target="_blank">Mobifone Thái Nguyên</a>
     </div>
     <!-- /.navbar-header -->
 

@@ -52,7 +52,7 @@ class UserController extends Controller
     	$user->level = $request->level;
     	$user->info = $request->info;
     	$user->save();
-    	return redirect('admin/user/add')->with('thongbao','Nhập User thành công');
+    	return redirect('admin/user/list')->with('thongbao','Nhập User thành công');
 
     }
     //Thieu $customer
@@ -104,7 +104,7 @@ class UserController extends Controller
 
         }
         $user->save();
-        return redirect('admin/user/edit/'.$id)->with('thongbao','Sửa User thành công');
+        return redirect('admin/user/list')->with('thongbao','Sửa User thành công');
     }
 
     public function getDel($id){

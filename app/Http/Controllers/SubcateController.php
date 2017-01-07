@@ -50,7 +50,7 @@ class SubcateController extends Controller
             $subcate->subcate_img = "";
         }
         $subcate->save();
-        return redirect('admin/subcate/add')->with('thongbao','Them thanh cong');
+        return redirect('admin/subcate/list')->with('thongbao','Them thanh cong');
     }
     //Thieu Customer
     public function getEdit($id){
@@ -87,7 +87,7 @@ class SubcateController extends Controller
             $subcate->subcate_img = $subcate_img;
         }
         $subcate->save();
-        return redirect('admin/subcate/edit/'.$id)->with('thongbao','Sửa thành công');
+        return redirect('admin/subcate/list')->with('thongbao','Sửa thành công');
     }
 
     public function getDel($id){

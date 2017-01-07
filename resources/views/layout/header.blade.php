@@ -20,7 +20,7 @@
             <div id="navbar" class="navbar-collapse collapse">
               <ul id="top-menu" class="nav navbar-nav navbar-right main-nav">
                             @foreach($cate as $c)
-              @if($c->customer_id == 1)
+              @if(($c->customer_id) == 1)
                   <li class="dropdown">
 <a href="canhan/{{$c->cate_namekd}}" class="dropdown-toggle"  role="button" aria-expanded="false">{{$c->cate_name}}
 @if(count($c->subcate) > 0)<span class="caret"></span>@endif</a>
@@ -29,6 +29,20 @@
                       <ul class="dropdown-menu" role="menu">
                         @foreach($c->subcate as $sc)
                           <li><a href="canhan/{{$c->cate_namekd}}/{{$sc->subcate_namekd}}">{{$sc->subcate_name}}</a></li>
+                        @endforeach           
+                      </ul>
+                    @endif
+                  </li>
+              
+              @elseif(($c->customer_id) == 2)
+                  <li class="dropdown">
+<a href="doanhnghiep/{{$c->cate_namekd}}" class="dropdown-toggle"  role="button" aria-expanded="false">{{$c->cate_name}}
+@if(count($c->subcate) > 0)<span class="caret"></span>@endif</a>
+
+                    @if(count($c->subcate) > 0)
+                      <ul class="dropdown-menu" role="menu">
+                        @foreach($c->subcate as $sc)
+                          <li><a href="doanhnghiep/{{$c->cate_namekd}}/{{$sc->subcate_namekd}}">{{$sc->subcate_name}}</a></li>
                         @endforeach           
                       </ul>
                     @endif

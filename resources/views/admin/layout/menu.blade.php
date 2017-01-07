@@ -13,7 +13,7 @@
             <!-- /input-group -->
         </li>
         <li>
-            <a href="#"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+            <a href="admin/cate/list"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
         </li>
         <li>
             <a href="admin/cate/list"><i class="fa fa-th-large fa-fw"></i> Category<span class="fa arrow"></span></a>

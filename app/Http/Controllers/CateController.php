@@ -9,7 +9,7 @@ use App\Cate;
 class CateController extends Controller
 {
     public function getList(){
-        $cate = Cate::all();
+        $cate = Cate::orderBy('updated_at','DESC')->get();
         return view('admin.cate.list',['cate'=>$cate]);
     }
 
@@ -51,7 +51,7 @@ class CateController extends Controller
 
 
         $cate->save();
-        return redirect('admin/cate/add')->with('thongbao','Thêm thành công');
+        return redirect('admin/cate/list')->with('thongbao','Thêm thành công');
     }
     //Thieu $customer
     public function getEdit($id){
@@ -88,7 +88,7 @@ class CateController extends Controller
             $cate->cate_img = $cate_img;
         }
         $cate->save();
-        return redirect('admin/cate/edit/'.$id)->with('thongbao','Sửa thành công');
+        return redirect('admin/cate/list')->with('thongbao','Sửa thành công');
     }
 
     public function getDel($id){

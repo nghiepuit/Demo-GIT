@@ -23,17 +23,19 @@ Route::get('myview','MyController@Myview');
 
 Route::get('truyen/{t}','MyController@truyenview');*/
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Route::get('/', function () {
+//    return view('PageController@trangchu');
+//});
+Route::get('/','PageController@trangchu');
 /*Route::get('thu',function(){
 	return view('admin.slide.list');
 });*/
-
+Route::get('admin','UserController@getLoginAdmin');
 Route::get('admin/login','UserController@getLoginAdmin');
 Route::post('admin/login','UserController@postLoginAdmin');
 Route::get('admin/logout','UserController@getLogout');
 Route::group(['prefix'=>'admin','middleware'=>'adminLogin'],function(){
+	Route::get('/','CateController@getList');
 	Route::group(['prefix'=>'cate'],function(){
 		//admin/cate/list
 		Route::get('list','CateController@getList');
@@ -116,14 +118,20 @@ Route::group(['prefix'=>'admin','middleware'=>'adminLogin'],function(){
 		Route::get('add','CustomerController@getAdd');
 	});
 });
-
 Route::get('trangchu','PageController@trangchu');
 Route::get('contact','PageController@contact');
-Route::get('canhan','PageController@canhan');//list danh sach cate ca nhan
+
 Route::get('news','PageController@news');
 Route::get('news/{id}','PageController@newsNoidung');
 Route::get('events','PageController@events');
 Route::get('events/{id}','PageController@eventsNoidung');
+
+Route::get('canhan','PageController@canhan');//list danh sach cate ca nhan
 Route::get('canhan/{cate_namekd}','PageController@chuyenmuc');//list subcate (cate $id)
 Route::get('canhan/{cate_namekd}/{subcate_namekd}','PageController@loaitin');//list post (subcate $id)
 Route::get('canhan/{cate_namekd}/{subcate_namekd}/{post_titlekd}','PageController@tintuc');//tin tuc
+
+Route::get('doanhnghiep','PageController@doanhnghiep');
+Route::get('doanhnghiep/{cate_namekd}','PageController@dnchuyenmuc');//list subcate (cate $id)
+Route::get('doanhnghiep/{cate_namekd}/{subcate_namekd}','PageController@dnloaitin');//list post (subcate $id)
+Route::get('doanhnghiep/{cate_namekd}/{subcate_namekd}/{post_titlekd}','PageController@dntintuc');//tin tuc

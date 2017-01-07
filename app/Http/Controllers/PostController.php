@@ -66,7 +66,7 @@ class PostController extends Controller
             $post->post_pic = "";
         }*/
         $post->save();
-        return redirect('admin/post/add')->with('thongbao','Thêm tin tức thành công');
+        return redirect('admin/post/list')->with('thongbao','Thêm tin tức thành công');
     }
     
     public function getEdit($id){
@@ -117,7 +117,7 @@ class PostController extends Controller
             $post->post_img = $post_img;
         }
         $post->save();
-        return redirect('admin/post/edit/'.$id)->with('thongbao','Sửa thành công');
+        return redirect('admin/post/list')->with('thongbao','Sửa thành công');
     }
 
     public function getDel($id){

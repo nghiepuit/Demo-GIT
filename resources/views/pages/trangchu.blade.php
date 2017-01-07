@@ -14,7 +14,7 @@
                    <div class="slider_caption">
                     <h2>TẦM NHÌN</h2>
                     <p>Với những thay đổi mang tính chiến lược, tầm nhìn 2015-2020 của MobiFone được thể hiện rõ nét trong thông điệp “Kết nối giá trị, khơi dậy tiềm năng”.</p>
-                    <a class="slider_btn" href="#">Chi tiết</a>
+                    <a class="slider_btn" href="canhan/gioi-thieu/gioi-thieu-chung/tam-nhin-va-su-menh">Chi tiết</a>
                   </div>
                   </li>
                 <!-- Start single slider-->
@@ -23,7 +23,7 @@
                    <div class="slider_caption">
                     <h2>SỨ MỆNH</h2>
                     <p>Với MobiFone, sứ mệnh của chúng tôi là đem lại những sản phẩm và dịch vụ kết nối mỗi người dân, gia đình, doanh nghiệp trong một hệ sinh thái, nơi những nhu cầu trong cuộc sống, công việc, học tập và giải trí được phát hiện, đánh thức và thỏa mãn nhằm đạt được sự  hài lòng, phát triển và hạnh phúc.</p>
-                    <a class="slider_btn" href="#">Chi tiết</a>
+                    <a class="slider_btn" href="canhan/gioi-thieu/gioi-thieu-chung/tam-nhin-va-su-menh">Chi tiết</a>
                   </div>
                 </li>
                 <!-- Start single slider-->
@@ -37,7 +37,7 @@
                     Lắng nghe và phục vụ khách hàng với thái độ tôn trọng;
                     Cố gắng tìm hiểu và dự đoán nhu cầu của khách hàng nhằm đáp ứng hơn những mong đợi của khách hàng;
                     Cung cấp thông tin đúng về tất cả các dịch vụ, sản phẩm của MobiFone và trả lời nhanh chóng, chính xác các câu hỏi của khách hàng;</p>
-                    <a class="slider_btn" href="#">Chi tiết</a>
+                    <a class="slider_btn" href="canhan/ho-tro-khach-hang/cham-soc-khach-hang/ket-noi-dai-lau">Chi tiết</a>
                   </div>
                 </li>
               </ul>
@@ -392,7 +392,7 @@
         <div class="row">
           <div class="col-lg-12 col-md-12"> 
             <div class="title_area">
-              <h2 class="title_two">What our Student says</h2>
+              <h2 class="title_two">QUẢN LÝ CẤP CAO</h2>
               <span></span> 
             </div>
           </div>
@@ -407,14 +407,14 @@
                 <!-- start single student testimonial -->
                 <div class="col-lg-4 col-md-4 col-sm-4">
                   <div class="single_stsTestimonial wow fadeInUp">
-                    <div class="stsTestimonial_msgbox">
+                    <!-- <div class="stsTestimonial_msgbox">
                       <p>when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
-                    </div>
-                    <img class="stsTesti_img" src="img/author.jpg" alt="img">
+                    </div> -->
+                    <img class="stsTesti_img" src="img/a1.jpg" alt="img">
                     <div class="stsTestimonial_content">
-                      <h3>Johnathan Doe</h3>                      
-                      <span>Ex. Student</span>
-                      <p>Software Department</p>
+                      <h3>Nguyễn Xuân Nghĩa</h3>                      
+                      <span>Kỹ sư phần mềm</span>
+                      <p>Giám đốc Trung tâm Đo lường viễn thông</p>
                     </div>
                   </div>
                 </div>
@@ -422,14 +422,14 @@
                 <!-- start single student testimonial -->
                 <div class="col-lg-4 col-md-4 col-sm-4">
                   <div class="single_stsTestimonial wow fadeInUp">
-                    <div class="stsTestimonial_msgbox">
+                    <!-- <div class="stsTestimonial_msgbox">
                       <p>when an unknown printer took a galley of type and scrambled it to make a type specimen book.scrambled it to make a type specimen book</p>
-                    </div>
-                    <img class="stsTesti_img" src="img/author.jpg" alt="img">
+                    </div> -->
+                    <img class="stsTesti_img" src="img/a2.jpg" alt="img">
                     <div class="stsTestimonial_content">
-                      <h3>Johnathan Doe</h3>                      
-                      <span>Ex. Student</span>
-                      <p>Software Department</p>
+                      <h3>Lê Nam Trà</h3>                      
+                      <span>Quản lý</span>
+                      <p>Tổng Giám đốc Mobifone</p>
                     </div>
                   </div>
                 </div>
@@ -437,14 +437,14 @@
                 <!-- start single student testimonial -->
                 <div class="col-lg-4 col-md-4 col-sm-4">
                   <div class="single_stsTestimonial wow fadeInUp">
-                    <div class="stsTestimonial_msgbox">
+                    <!-- <div class="stsTestimonial_msgbox">
                       <p>when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
-                    </div>
-                    <img class="stsTesti_img" src="img/author.jpg" alt="img">
+                    </div> -->
+                    <img class="stsTesti_img" src="img/a3.jpg" alt="img">
                     <div class="stsTestimonial_content">
-                      <h3>Johnathan Doe</h3>                      
-                      <span>Ex. Student</span>
-                      <p>Software Department</p>
+                      <h3>Phạm Nhật Vũ</h3>                      
+                      <span>Quản lý</span>
+                      <p>Chủ tịch Hội đồng Quản trị AVG</p>
                     </div>
                   </div>
                 </div>

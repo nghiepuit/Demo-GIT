@@ -60,7 +60,7 @@ a:focus{
 }
 
 h1,h2,h3,h4,h5,h6{
-	font-family: 'Varela', sans-serif;	
+	font-family: 'Arial', sans-serif;	
 }
 
 h2 {
@@ -355,6 +355,7 @@ img{
 }
 .news_tab .media-body > a {
   display: block;
+  font-family: Arial;
   font-size: 15px;
   font-weight: bold;
   margin-top: 5px;
@@ -368,8 +369,9 @@ img{
   font-style: italic;
 }
 .see_all {
-  border-bottom: 2px solid #ccc;
+  border-bottom: 2px solid #02589C;
   float: right;
+  font-family: Arial;
   font-size: 16px;
   font-weight: bold;
   text-decoration: none;
@@ -929,6 +931,7 @@ div[data-dimension] {
   width: 100%;
 }
 .single_footer_widget > h3 {
+  font-size: 20px;
   color: #666666;
   text-transform: uppercase;
   margin-bottom: 25px;
@@ -937,6 +940,7 @@ div[data-dimension] {
   color: #666666;
 }
 .footer_widget_nav li a {
+  font-family: Arial,"Helvetica Neue",Helvetica,sans-serif;
   font-size: 12px;
   font-weight: bold;
   margin-bottom: 3px;
@@ -1003,6 +1007,9 @@ div[data-dimension] {
 }
 .courseArchive_content .single_course {
   margin-bottom: 30px;
+}
+.spe2{
+  height: 350px;
 }
 .pagination li a{
   -webkit-transition: all 0.5s;

@@ -22,11 +22,11 @@
                     <div class="singCourse_imgarea">
                       <img src="upload/post/{{$p->post_img}}" />
                       <div class="mask">                         
-                        <a href="canhan/{{$cate1->cate_namekd}}/{{$subcate->subcate_namekd}}/{{$p->post_titlekd}}" class="course_more">XEM THEM</a>
+                        <a href="doanhnghiep/{{$cate1->cate_namekd}}/{{$subcate->subcate_namekd}}/{{$p->post_titlekd}}" class="course_more">XEM THEM</a>
                       </div>
                     </div>
                     <div class="singCourse_content">
-                    <h3 class="singCourse_title"><a href="canhan/{{$cate1->cate_namekd}}/{{$subcate->subcate_namekd}}/{{$p->post_titlekd}}">{{$p->post_title}}</a></h3>
+                    <h3 class="singCourse_title"><a href="doanhnghiep/{{$cate1->cate_namekd}}/{{$subcate->subcate_namekd}}/{{$p->post_titlekd}}">{{$p->post_title}}</a></h3>
                     <!-- <p class="singCourse_price"><span>$20</span> Per One Month</p> -->
                     <p>{!!$p->post_sum!!}</p>
                     </div>

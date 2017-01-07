@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="MOBIFONE THAI NGUYEN 2016">
     <meta name="author" content="">
-    <title>MOBIFONE THAI NGUYEN</title>
+    <title>Admin-Mobifone</title>
     <base href="{{asset('')}}">
     <!-- Bootstrap Core CSS -->
     <link href="admin_asset/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">

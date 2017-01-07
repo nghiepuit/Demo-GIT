@@ -13,7 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="MOBIFONE THAI NGUYEN 2016">
     <meta name="author" content="">
-    <title>MOBIFONE THAI NGUYEN</title>
+    <title>Mobifone Thái Nguyên</title>
     <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
     <base href="{{asset('')}}">
 
@@ -85,7 +85,7 @@
     <!-- initialize jQuery Library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Preloader js file -->
-    <script src="js/queryloader2.min.js" type="text/javascript"></script>
+    <!-- <script src="js/queryloader2.min.js" type="text/javascript"></script> -->
     <!-- For smooth animatin  -->
     <script src="js/wow.min.js"></script>  
     <!-- Bootstrap js -->
