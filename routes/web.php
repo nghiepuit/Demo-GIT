@@ -65,6 +65,20 @@ Route::group(['prefix'=>'admin','middleware'=>'adminLogin'],function(){
 
 		Route::get('del/{id}','SubcateController@getDel');
 	});
+	Route::group(['prefix'=>'nsx'],function(){
+		//admin/cate/list
+		Route::get('list','NsxController@getList');
+
+		Route::get('edit/{id}','NsxController@getEdit');
+
+		Route::post('edit/{id}','NsxController@postEdit');
+
+		Route::get('add','NsxController@getAdd');
+
+		Route::post('add','NsxController@postAdd');
+
+		Route::get('del/{id}','NsxController@getDel');
+	});
 
 	Route::group(['prefix'=>'post'],function(){
 		//admin/cate/list
@@ -80,9 +94,24 @@ Route::group(['prefix'=>'admin','middleware'=>'adminLogin'],function(){
 
 		Route::get('del/{id}','PostController@getDel');
 	});
+	Route::group(['prefix'=>'product'],function(){
+		//admin/cate/list
+		Route::get('list','ProductController@getList');
+
+		Route::get('edit/{id}','ProductController@getEdit');
+
+		Route::post('edit/{id}','ProductController@postEdit');
+
+		Route::get('add','ProductController@getAdd');
+
+		Route::post('add','ProductController@postAdd');
+
+		Route::get('del/{id}','ProductController@getDel');
+	});
 
 	Route::group(['prefix'=>'ajax'],function(){
 		Route::get('subcate/{cate_id}','AjaxController@getSubcate');
+		Route::get('nsx/{subcate_id}','AjaxController@getNsx');
 	});
 
 	Route::group(['prefix'=>'user'],function(){
@@ -118,6 +147,8 @@ Route::group(['prefix'=>'admin','middleware'=>'adminLogin'],function(){
 		Route::get('add','CustomerController@getAdd');
 	});
 });
+
+
 Route::get('trangchu','PageController@trangchu');
 Route::get('contact','PageController@contact');
 
@@ -126,10 +157,17 @@ Route::get('news/{id}','PageController@newsNoidung');
 Route::get('events','PageController@events');
 Route::get('events/{id}','PageController@eventsNoidung');
 
+
+Route::get('item/{product_namekd}','PageController@sanpham');
+
 Route::get('canhan','PageController@canhan');//list danh sach cate ca nhan
-Route::get('canhan/{cate_namekd}','PageController@chuyenmuc');//list subcate (cate $id)
-Route::get('canhan/{cate_namekd}/{subcate_namekd}','PageController@loaitin');//list post (subcate $id)
-Route::get('canhan/{cate_namekd}/{subcate_namekd}/{post_titlekd}','PageController@tintuc');//tin tuc
+
+Route::get('{cate_namekd}','PageController@chuyenmuc');//list subcate (cate $id)
+Route::get('{cate_namekd}/{subcate_namekd}','PageController@loaitin');//list post (subcate $id)
+Route::get('{cate_namekd}/{subcate_namekd}/{nsx_namekd}','PageController@nhasx');
+
+
+Route::get('{cate_namekd}/{subcate_namekd}/{post_titlekd}','PageController@tintuc');//tin tuc
 
 Route::get('doanhnghiep','PageController@doanhnghiep');
 Route::get('doanhnghiep/{cate_namekd}','PageController@dnchuyenmuc');//list subcate (cate $id)

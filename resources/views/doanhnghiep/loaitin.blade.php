@@ -59,12 +59,12 @@
                   <li>
                     <div class="media">
                       <div class="media-left">
-                        <a href="#" class="news_img">
+                        <a href="events/{{$n->id}}" class="news_img">
                           <img alt="img" src="upload/news/{{$n->img}}" class="media-object">
                         </a>
                       </div>
                       <div class="media-body">
-                       <a href="#">{{$n->title}}</a>
+                       <a href="events/{{$n->id}}">{{$n->title}}</a>
                        <span class="feed_date">{{$n->updated_at}}</span>
                       </div>
                     </div>

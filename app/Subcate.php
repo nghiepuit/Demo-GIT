@@ -14,4 +14,10 @@ class Subcate extends Model
     public function post(){
     	return $this->hasMany('App\Post','subcate_id','id');
     }
+    public function nsx(){
+    	return $this->hasMany('App\Nsx','subcate_id','id');
+    }
+    public function product(){
+        return $this->hasMany('App\Product','subcate_id','id');
+    }
 }

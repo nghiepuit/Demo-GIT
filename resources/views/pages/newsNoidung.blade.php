@@ -19,7 +19,7 @@
                 <div class="col-lg-12 col-12 col-sm-12">
                   <div class="single_blog">
                     <div class="blogimg_container">
-                      <a href="#" class="blog_img">
+                      <a href="news/{{$news->id}}" class="blog_img">
                         <img alt="img" src="upload/news/{{$news->img}}">
                       </a>
                     </div>

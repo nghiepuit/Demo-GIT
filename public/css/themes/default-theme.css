@@ -144,7 +144,7 @@ Author URI : http://www.wpfreeware.com/
   border-color: #78ADC9;
 }
 .related_post > h2 {
-  color: #78adc9;
+  color: #00579C;
 }
 .events_slider .slick-prev,.events_slider .slick-next {
   background-color: #78adc9;
@@ -186,7 +186,7 @@ Author URI : http://www.wpfreeware.com/
   color: #78adc9 !important;  
 }
 .single_sidebar > h2 {
-  background-color: #00579C;
+  /* background-color: #00579C; */
 }
 .singlecourse_price {  
   color: #78ADC9;

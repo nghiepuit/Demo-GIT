@@ -40,6 +40,18 @@
             <!-- /.nav-second-level -->
         </li>
         <li>
+            <a href="admin/nsx/list"><i class="fa fa-th-list fa-fw"></i> Nsx<span class="fa arrow"></span></a>
+            <ul class="nav nav-second-level">
+                <li>
+                    <a href="admin/nsx/list">List NSX</a>
+                </li>
+                <li>
+                    <a href="admin/nsx/add">Add NSX</a>
+                </li>
+            </ul>
+            <!-- /.nav-second-level -->
+        </li>
+        <li>
             <a href="admin/post/list"><i class="fa fa-edit fa-fw"></i> Post<span class="fa arrow"></span></a>
             <ul class="nav nav-second-level">
                 <li>
@@ -47,6 +59,18 @@
                 </li>
                 <li>
                     <a href="admin/post/add">Add Post</a>
+                </li>
+            </ul>
+            <!-- /.nav-second-level -->
+        </li>
+        <li>
+            <a href="admin/product/list"><i class="fa fa-edit fa-fw"></i> Product<span class="fa arrow"></span></a>
+            <ul class="nav nav-second-level">
+                <li>
+                    <a href="admin/product/list">List Product</a>
+                </li>
+                <li>
+                    <a href="admin/product/add">Add Product</a>
                 </li>
             </ul>
             <!-- /.nav-second-level -->

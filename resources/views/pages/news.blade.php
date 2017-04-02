@@ -3,7 +3,7 @@
 
     <!--=========== BEGIN COURSE BANNER SECTION ================-->
     <div class="banner">
-      <img src="upload/news/newsbanner.jpg" alt="">
+      <img src="upload/news/newsbanner2.jpg" alt="">
     </div>
     <!--=========== END COURSE BANNER SECTION ================-->
     

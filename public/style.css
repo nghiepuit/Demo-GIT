@@ -39,7 +39,7 @@ body,html{
   overflow-x:hidden;
 }
 body {
-font-family: 'Merriweather', serif;
+  font-family: 'Arial', serif;
   overflow-x: hidden !important;
 }
 
@@ -301,7 +301,7 @@ img{
   width: 100%;
 }
 .aboutus_area p {
-  line-height: 22px;
+  line-height: 26px;
 }
 .titile{
   text-transform: uppercase;
@@ -481,7 +481,7 @@ img{
   font-weight: bold;
 }
 .single_whyus_top>p{
-  font-size: 13px;
+  font-size: 15px;
 }
 .whyus_bottom{
   float: left;
@@ -651,10 +651,12 @@ div[data-dimension] {
   border-radius: 4px;
 }
 .singCourse_content{
+  font-family: Arial;
   float: left;
   display: inline;
   width: 100%;
   padding: 10px;
+  overflow: hidden; 
 }
 .singCourse_title {
   border-bottom: 1px solid #efefef;
@@ -662,6 +664,9 @@ div[data-dimension] {
   margin-top: 10px;
   padding-bottom: 10px;
   
+}
+.singCourse_content p{
+  white-space: nowrap;
 }
 .singCourse_title a{
   -webkit-transition: all 0.5s;
@@ -983,7 +988,7 @@ div[data-dimension] {
 
 }
 .banner img{
-  max-height: 300px;
+  margin-top: 122px;
 }
 .banner h2 {
   color: #000 ;
@@ -1007,9 +1012,15 @@ div[data-dimension] {
 }
 .courseArchive_content .single_course {
   margin-bottom: 30px;
+  height: 255px;
 }
 .spe2{
   height: 350px;
+}
+.psum{
+  max-height: 100px;
+  word-wrap: break-word;
+  overflow: hidden
 }
 .pagination li a{
   -webkit-transition: all 0.5s;
@@ -1036,7 +1047,7 @@ div[data-dimension] {
   margin-bottom: 15px;  
 }
 .single_sidebar > h2 {
-  color: #fff;
+  color: #00579C;
   font-size: 26px;
   padding: 0 5px;
   margin-bottom: 15px;
@@ -1178,7 +1189,7 @@ div[data-dimension] {
 .blog_img img {
   height: 100%;
 /*   width:100%; */
-max-height: 221px;
+  height: 153px;
   -webkit-transition: all 1s ease; /* Safari and Chrome */
   -moz-transition: all 1s ease; /* Firefox */
   -ms-transition: all 1s ease; /* IE 9 */
@@ -1218,6 +1229,7 @@ max-height: 221px;
   padding: 0px 15px;
 }
 .blog_commentbox > p {
+  font-family: Arial;
   color: #888;
   display: inline-block;
   font-size: 15px;
@@ -1235,8 +1247,10 @@ max-height: 221px;
 }
 .blog_commentbox > p i{
   margin-right: 5px;
+  font-family: Arial;
 }
 .blog_commentbox>a{
+  font-family: Arial;
   color: #888;
   font-size: 15px;
   font-weight: normal;
@@ -1846,4 +1860,18 @@ max-height: 221px;
 
 .logo_mobifone{
   max-width: 188px;
+}
+.khachhang{
+  float: right;
+  margin-top: 10px;
+}
+.khachhang li{
+  float: left;
+  padding-left: 10px;
+}
+.khachhang li img{
+  width: 12px;
+}
+.khachhang li>a{
+  padding-left: 10px;
 }

@@ -79,6 +79,7 @@ class CateController extends Controller
         if ($request->hasFile('cate_img')) {
             $file = $request->file('cate_img');
             $name = $file->getClientOriginalName();
+            //dd($name);
             $cate_img = str_random(4)."_".$name;
             while (file_exists("upload/cate/".$cate_img)) {
                 $cate_img = str_random(4)."_".$name;

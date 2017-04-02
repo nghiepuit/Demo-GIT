@@ -50,23 +50,23 @@
             <div class="courseArchive_sidebar">
               <!-- start single sidebar -->
               <div class="single_sidebar">
-                <h2>Tin tức nổi bật <span class="fa fa-angle-double-right"></span></h2>
+                <h2>Sự kiện <span class="fa fa-angle-double-right"></span></h2>
                 <ul class="news_tab">
-                @foreach($nb as $n)
+                @foreach($news as $n)
                   <li>
                     <div class="media">
                       <div class="media-left">
-                        <a href="#" class="news_img">
-                          <img alt="img" src="upload/post/{{$n->post_img}}" class="media-object">
+                        <a href="events/{{$n->id}}" class="news_img">
+                          <img alt="img" src="upload/news/{{$n->img}}" class="media-object">
                         </a>
                       </div>
                       <div class="media-body">
-                       <a href="#">{{$n->post_title}}</a>
-                       <span class="feed_date">{{$n->created_at}}</span>
+                       <a href="events/{{$n->id}}">{{$n->title}}</a>
+                       <span class="feed_date">{{$n->updated_at}}</span>
                       </div>
                     </div>
                   </li>
-                @endforeach               
+                  @endforeach            
                 </ul>
               </div>
               <!-- End single sidebar -->

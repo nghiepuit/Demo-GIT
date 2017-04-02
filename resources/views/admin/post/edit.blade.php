@@ -62,7 +62,7 @@
                     </div>
                     <div class="form-group">
                         <label>Post Summary</label>
-                        <textarea class="form-control summernote" rows="3" name="post_sum">{{$post->post_sum}}</textarea>
+                        <textarea class="form-control" rows="3" name="post_sum">{{$post->post_sum}}</textarea>
                     </div>
                     <div class="form-group">
                         <label>Title Content</label>

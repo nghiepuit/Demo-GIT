@@ -3,7 +3,7 @@
 
     <!--=========== BEGIN COURSE BANNER SECTION ================-->
     <div class="banner">
-      <img src="upload/cate/{{$cate1->cate_img}}" alt="">
+      <img src="upload/cate/{{$cate->cate_img}}" alt="">
     </div>
     <!--=========== END COURSE BANNER SECTION ================-->
     
@@ -29,7 +29,7 @@
                     <div class="blog_commentbox">
                       <p>Danh sách {{$sc->subcate_name}}</p>
                       <p><i class="fa fa-calendar"></i>15 March 2015</p>
-                      <a href="#"><i class="fa fa-comments"></i>6 Bài viết</a>
+                      <a href="canhan/{{$cate1->cate_namekd}}/{{$sc->subcate_namekd}}"><i class="fa fa-comments"></i>6 Bài viết</a>
                     </div>
                     <p class="blog_summary">{{$sc->subcate_sum}}</p>
                     <a class="blog_readmore" href="doanhnghiep/{{$cate1->cate_namekd}}/{{$sc->subcate_namekd}}">CHI TIẾT</a>
@@ -66,12 +66,12 @@
                   <li>
                     <div class="media">
                       <div class="media-left">
-                        <a href="#" class="news_img">
+                        <a href="canhan/{{$cate1->cate_namekd}}/{{$sc->subcate_namekd}}/{{$n->post_titlekd}}" class="news_img">
                           <img alt="img" src="upload/post/{{$n->post_img}}" class="media-object">
                         </a>
                       </div>
                       <div class="media-body">
-                       <a href="#">{{$n->post_title}}</a>
+                       <a href="canhan/{{$cate1->cate_namekd}}/{{$sc->subcate_namekd}}/{{$n->post_titlekd}}">{{$n->post_title}}</a>
                        <span class="feed_date">{{$n->created_at}}</span>
                       </div>
                     </div>

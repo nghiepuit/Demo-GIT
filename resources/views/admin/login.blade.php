@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Khóa Học Lập Trình Laravel Framework 5.x Tại Khoa Phạm">
     <meta name="author" content="">
-
+    <link rel="shortcut icon" type="image/icon" href="img/favicon.ico"/>
     <title>Mobifone</title>
     <base href="{{asset('')}}">
     <!-- Bootstrap Core CSS -->

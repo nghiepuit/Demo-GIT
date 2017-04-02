@@ -1,70 +1,62 @@
-    <footer id="footer">
-      <!-- Start footer top area -->
-      <div class="footer_top">
-        <div class="container">
-          <div class="row">
-            <div class="col-ld-3  col-md-3 col-sm-3">
-              <div class="single_footer_widget">
-                <h3>Giới thiệu</h3>
-                <p>Một sản phẩm - Hợp tác cùng Mobifone Thái Nguyên</p>
-              </div>
-            </div>
-            <div class="col-ld-3  col-md-3 col-sm-3">
-              <div class="single_footer_widget">
-                <h3>Sản phẩm & Dịch vụ</h3>
-                <ul class="footer_widget_nav">
-                  <li><a href="canhan/di-dong/goi-cuoc">Gói cước</a></li>
-                  <li><a href="canhan/di-dong/dich-vu">Dịch vụ</a></li>
-                  <li><a href="canhan/khuyen-mai">Khuyến mãi</a></li>
-                  <li><a href="canhan/ho-tro-khach-hang">Hỗ trợ khách hàng</a></li>
-                  <li><a href="canhan/taikhoan">Tài khoản của tôi</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-ld-3  col-md-3 col-sm-3">
-              <div class="single_footer_widget">
-                <h3>Hỗ trợ khách hàng</h3>
-                <ul class="footer_widget_nav">
-                  <li><a href="canhan/ho-tro-khach-hang/faq">FAQ</a></li>
-                  <li><a href="contact">Liên hệ</a></li>
-                  <li><a href="">Đường dây nóng:+84 280 3859 088</a></li>
-                  <li><a href="#">Tra cứu thông tin TBTT</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-ld-3  col-md-3 col-sm-3">
-              <div class="single_footer_widget">
-                <h3>Social Links</h3>
-                <ul class="footer_social">
-                  <li><a data-toggle="tooltip" data-placement="top" title="Facebook" class="soc_tooltip" target="_blank" href="https://www.facebook.com/mobifone"><i class="fa fa-facebook"></i></a></li>
-                  <li><a data-toggle="tooltip" data-placement="top" title="Twitter" class="soc_tooltip" target="_blank"  href="#"><i class="fa fa-twitter"></i></a></li>
-                  <li><a data-toggle="tooltip" data-placement="top" title="Google+" class="soc_tooltip" target="_blank"  href="#"><i class="fa fa-google-plus"></i></a></li>
-                  <li><a data-toggle="tooltip" data-placement="top" title="Linkedin" class="soc_tooltip" target="_blank"  href="#"><i class="fa fa-linkedin"></i></a></li>
-                  <li><a data-toggle="tooltip" data-placement="top" title="Youtube" class="soc_tooltip" target="_blank"  href="https://www.youtube.com/user/VMSMobiFone"><i class="fa fa-youtube"></i></a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- End footer top area -->
+<div class="footer">
+  <div class="ck">
+    <h2 class="f-h2">CAM KẾT</h2>
+    <ul>
+      <li>
+        <img src="template_asset/images/site/footer/icon-commitment-1.png" alt="" class="img-ck">
+        <span class="txt-ck">Sản phẩm, hàng hóa chính hãng đa dạng phong phú. </span>
+      </li>
+      <li>
+        <img class="img-ck" src="template_asset/images/site/footer/icon-commitment-2.png" alt="">
+        <span class="txt-ck">Luôn luôn giá rẻ & khuyến mại không ngừng. </span>
+      </li>
+      <li>
+        <img class="img-ck" src="template_asset/images/site/footer/icon-commitment-3.png" alt="">
+        <span class="txt-ck">Dịch vụ chăm sóc khách hàng uy tín. </span>
+      </li>
+    </ul>
+  </div>
+  <div class="htkh">
+    <h4 class="f-h4">HỖ TRỢ KHÁCH HÀNG</h4> 
+    <ul class="f-ul">
+      <li class="f-li"><a class="f-a" target="_blank" href="">Hướng dẫn mua online</a></li>
+      <li class="f-li"><a class="f-a" target="_blank" href="">Hướng dẫn mua trả góp</a></li>
+      <li class="f-li"><a class="f-a" target="_blank" href="">Bảo hành, đổi trả</a></li>
+      <li class="f-li"><a class="f-a" target="_blank" href="">Quy định, chính sách</a></li>
+      <li class="f-li"><a class="f-a" target="_blank" href="">Chính sách giao hàng</a></li>
+    </ul>
+  </div>
+  <div class="gtct">
+    <h4 class="f-h4">THÔNG TIN CÔNG TY</h4> 
+    <ul class="f-ul">
+      <li class="f-li"><a class="f-a" target="_blank" href="">Giới thiệu công ty</a></li>
+      <li class="f-li"><a class="f-a" target="_blank" href="">Tuyển dụng</a></li>
+      <li class="f-li"><a class="f-a" target="_blank" href="admin">Đăng nhập</a></li>
+    </ul>
+<!--     <div class="conn">
+  <h3 class="f-h3">KẾT NỐI VỚI CHÚNG TÔI</h3>
+  <ul>
+    <li><a href="" target="_blank"><img src="template_asset/images/site/footer/facebook.png" alt=""></a></li>
+    <li><a href="" target="_blank"><img src="template_asset/images/site/footer/email.png" alt=""></a></li>
+    <li><a href="" target="_blank"><img src="template_asset/images/site/footer/twitter.png" alt=""></a></li>
+    <li><a href="" target="_blank"><img src="template_asset/images/site/footer/google-plus.png" alt=""></a></li>
+    <li><a href="" target="_blank"><img src="template_asset/images/site/footer/youtube.png" alt=""></a></li>
+  </ul>
+</div> -->
+  </div>
+  <div class="td">
+    <h4 class="f-h4">TỔNG ĐÀI TRỢ GIÚP</h3>
+    <ul class="f-ul">
+      <li class="f-li"><a class="f-a" target="_blank" href="">Chăm sóc & Hỗ trợ sau bán hàng</a></li>
+    </ul>
+    <h1 class="f-h1">0986 886 888</h1>  
+  </div>
+</div>
+<div style="clear: both;"></div>
 
-      <!-- Start footer bottom area -->
-      <div class="footer_bottom">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-6">
-              <div class="footer_bootomLeft">
-                <p> © Copyright 2016 - MobiFone</p>
-              </div>
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-6">
-              <div class="footer_bootomRight">
-                <p>Giấy phép số: 144/GP-BC do Bộ thông tin - Truyền thông cấp ngày 18/04/2007</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- End footer bottom area -->
-    </footer>
+<div class="if">
+  <span>NGÔ XUÂN TÀI, ĐH CÔNG NGHỆ THÔNG TIN THÁI NGUYÊN. GPĐKKD số: 09686868 do Sở KHĐT THÁI NGUYÊN cấp ngày 6/8/2016</span><br>
+  <span>Email: ngotai94@gmail.com. Điện thoại: 0986 666 888</span><br>
+  <img src="template_asset/images/site/fend/dathongbao.png" alt="">
+  <img src="template_asset/images/site/fend/dadangky.png" alt="">
+</div>

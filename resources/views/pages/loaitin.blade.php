@@ -1,97 +1,111 @@
 @extends('layout.index')
 @section('content')
-    <!--=========== BEGIN COURSE BANNER SECTION ================-->
-    <div class="banner">
-      <img src="upload/subcate/{{$subcate->subcate_img}}" alt="">
+<div class='product'>
+  <div class='pro-title'>
+      <div class='title-name'>
+          <img class='logo-pro-title' src='template_asset/images/site/pro/cd.png' alt=''>
+          <h3>
+          {{$subcate2->subcate_name}}
+          </h3>
+
+      </div>
+
+        <div class='sub-title'>
+          <div class='sub-title-ul'>
+            @foreach($subcate2->nsx as $n)
+              <div class='sub-title-li'><a href='{{$cate1->cate_namekd}}/{{$subcate2->subcate_namekd}}/{{$n->nsx_namekd}}'>{{$n->nsx_name}}  | </a></div>
+            @endforeach
+          </div>
+        </div>
+
     </div>
-    <!--=========== END COURSE BANNER SECTION ================-->
 
+    <div class='pro'>
+      <div class='pros'>
+        <ul class='pro-ul'>
+          @foreach($product2 as $p)
+            <li class='pro-li'>
+                <a class='pro-a' href='item/{{$p->product_namekd}}' target'_blank' title='{{$p->product_namekd}}'>
+                  <img class='pro-img' src='upload/product/{{$p->product_img}}'>
+                  <img class='sale-value-img' src='template_asset/images/site/pro/sale-img.png'>
+                  <span class='sale-value-txt'>{{$p->product_salevalue}}%</span>
+                  <?php 
+                  $phantram = ($p->product_salevalue)/100;
+                  $tiensale = ($p->product_price)*$phantram;
+                  $price=($p->product_price)-$tiensale ?>
 
-    <!--=========== BEGIN COURSE BANNER SECTION ================-->
-    <section id="courseArchive">
-      <div class="container">
-        <div class="row">
-          <!-- start course content -->
-          <div class="col-lg-8 col-md-8 col-sm-8">
-            <div class="courseArchive_content">
-              <div class="row">
-              	@foreach($post as $p)
-                <!-- start single course -->
-                <div class="col-lg-6 col-md-6 col-sm-6">
-                  <div class="single_course wow fadeInUp spe2">
-                    <div class="singCourse_imgarea">
-                      <img src="upload/post/{{$p->post_img}}" />
-                      <div class="mask">                         
-                        <a href="canhan/{{$cate1->cate_namekd}}/{{$subcate->subcate_namekd}}/{{$p->post_titlekd}}" class="course_more">XEM THEM</a>
-                      </div>
-                    </div>
-                    <div class="singCourse_content">
-                    <h3 class="singCourse_title"><a href="canhan/{{$cate1->cate_namekd}}/{{$subcate->subcate_namekd}}/{{$p->post_titlekd}}">{{$p->post_title}}</a></h3>
-                    <!-- <p class="singCourse_price"><span>$20</span> Per One Month</p> -->
-                    <p>{!!$p->post_sum!!}</p>
-                    </div>
-<!--                     <div class="singCourse_author">
-  <img src="img/author.jpg" alt="img">
+                  <div id="pro-price3">
+                  @forelse(str_split(number_format($price,0)) as $p1)
+                    <?php 
+                      switch ($p1) {
+                        case ',':
+                          ?><span><img class="pro-price3" src="{{url('template_asset/images/site/pro/x42.png')}}" alt=""></span><?php
+                          break;
+                        case '0':
+                          # code...
+                          ?><span><img class="pro-price3" src="{{url('template_asset/images/site/pro/0x42.png')}}" alt=""></span><?php
+                          break;
+                        case '1':
+                          # code...
+                          ?><span><img class="pro-price3" src="{{url('template_asset/images/site/pro/1x42.png')}}" alt=""></span><?php
+                          break;
+                          
+                        case '2':
+                          # code...
+                          ?><span><img class="pro-price3" src="{{url('template_asset/images/site/pro/2x42.png')}}" alt=""></span><?php
+                          break;
+                          
+                        case '3':
+                          # code...
+                          ?><span><img class="pro-price3" src="{{url('template_asset/images/site/pro/3x42.png')}}" alt=""></span><?php
+                          break;
+                          
+                        case '4':
+                          # code...
+                          ?><span><img class="pro-price3" src="{{url('template_asset/images/site/pro/4x42.png')}}" alt=""></span><?php
+                          break;
+                          
+                        case '5':
+                          # code...
+                          ?><span><img class="pro-price3" src="{{url('template_asset/images/site/pro/5x42.png')}}" alt=""></span><?php
+                          break;
+                          
+                        case '6':
+                          # code...
+                          ?><span><img class="pro-price3" src="{{url('template_asset/images/site/pro/6x42.png')}}" alt=""></span><?php
+                          break;
+                          
+                        case '7':
+                          # code...
+                          ?><span><img class="pro-price3" src="{{url('template_asset/images/site/pro/7x42.png')}}" alt=""></span><?php
+                          break;
+                          
+                        case '8':
+                          # code...
+                          ?><span><img class="pro-price3" src="{{url('template_asset/images/site/pro/8x42.png')}}" alt=""></span><?php
+                          break;
+                        case '9':
+                          # code...
+                          ?><span><img class="pro-price3" src="{{url('template_asset/images/site/pro/9x42.png')}}" alt=""></span><?php
+                          break;
 
-</div> -->
+                        
+                        default:
+                          # code...
+                          break;
+                      }
+                     ?>
+                  @empty
+                  @endforelse
                   </div>
-                </div>
-                <!-- End single course -->
-				        @endforeach
-              </div>
-              <!-- start previous & next button -->
-              <!-- <div class="single_blog_prevnext">
-                <a href="#" class="prev_post wow fadeInLeft animated" style="visibility: visible; animation-name: fadeInLeft;"><i class="fa fa-angle-left"></i>Previous</a>
-                <a href="#" class="next_post wow fadeInRight animated" style="visibility: visible; animation-name: fadeInRight;">Next<i class="fa fa-angle-right"></i></a>
-              </div> -->
-            </div>
-          </div>
-          <!-- End course content -->
-
-          <!-- start course archive sidebar -->
-          <div class="col-lg-4 col-md-4 col-sm-4">
-            <div class="courseArchive_sidebar">
-              <!-- start single sidebar -->
-              <div class="single_sidebar">
-                <h2>Sự kiện <span class="fa fa-angle-double-right"></span></h2>
-                <ul class="news_tab">
-                @foreach($news as $n)
-                  <li>
-                    <div class="media">
-                      <div class="media-left">
-                        <a href="#" class="news_img">
-                          <img alt="img" src="upload/news/{{$n->img}}" class="media-object">
-                        </a>
-                      </div>
-                      <div class="media-body">
-                       <a href="#">{{$n->title}}</a>
-                       <span class="feed_date">{{$n->updated_at}}</span>
-                      </div>
-                    </div>
-                  </li>
-                  @endforeach            
-                </ul>
-              </div>
-              <!-- End single sidebar -->
-              <!-- start single sidebar -->
-              <!-- <div class="single_sidebar">
-                <h2>Quick Links <span class="fa fa-angle-double-right"></span></h2>
-                <ul>
-                  <li><a href="#">Link 1</a></li>
-                  <li><a href="#">Link 2</a></li>
-                  <li><a href="#">Link 3</a></li>
-                  <li><a href="#">Link 4</a></li>
-                  <li><a href="#">Link 5</a></li>
-                </ul>
-              </div> -->
-              <!-- End single sidebar -->
-
-            </div>
-          </div>
-          <!-- start course archive sidebar -->
+                  <span class='pro-price2'>{{number_format($p->product_price,0,",",".")}}</span>
+                  <span class='pro-name' title=''>{{$p->product_name}}</span>
+                  <span class='pro-info' title=''>{{$p->product_info}}</span>
+                  <span class='pro-sale-info' title=''>test</span>
+                </a>
+              </li>
+        @endforeach
         </div>
       </div>
-    </section>
-    <!--=========== END COURSE BANNER SECTION ================-->
-
+</div>
 @endsection

@@ -7,6 +7,7 @@
     <meta name="description" content="MOBIFONE THAI NGUYEN 2016">
     <meta name="author" content="">
     <title>Admin-Mobifone</title>
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
     <base href="{{asset('')}}">
     <!-- Bootstrap Core CSS -->
     <link href="admin_asset/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">

@@ -51,7 +51,7 @@
                     </div>
                     <div class="form-group">
                         <label>Title Summary</label>
-                        <textarea class="form-control summernote" name="post_sum"></textarea>
+                        <textarea class="form-control" name="post_sum"></textarea>
                     </div>
                     <!-- <script>tinymce.init({
                       selector: '#tinymce',
