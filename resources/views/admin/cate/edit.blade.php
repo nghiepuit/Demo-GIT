@@ -4,7 +4,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">Category
+                <h1 class="page-header">Danh mục
                     <small>{{$cate->cate_name}}</small>
                 </h1>
             </div>
@@ -26,21 +26,21 @@
                 <form action="admin/cate/edit/{{$cate->id}}" method="POST" enctype="multipart/form-data">
                     <input type="hidden" name="_token" value="{{csrf_token()}}">
                     <div class="form-group">
-                        <label>Category Name</label>
-                        <input class="form-control" name="cate_name" placeholder="Please Enter Category Name" value="{{$cate->cate_name}}" />
+                        <label>Tên Danh mục</label>
+                        <input class="form-control" name="cate_name" placeholder="Tên Danh mục" value="{{$cate->cate_name}}" />
                     </div>
                     <div class="form-group">
-                        <label>Category Image</label>
+                        <label>Ảnh Danh mục</label>
                         <p>
                             <img width="200px" src="upload/cate/{{$cate->cate_img}}" alt="">
                         </p>
                         <input class="form-control" type="file" name="cate_img" />
                     </div>
                     <div class="form-group">
-                        <label>Customer</label>
+                        <label>Khách hàng</label>
                         <select class="form-control" name="customer_id">
                         @foreach($customer as $cus)
-                            <option 
+                            <option
                             @if($cate->customer_id == $cus->id)
                                 {{"selected"}}
                             @endif
@@ -49,11 +49,11 @@
                         </select>
                     </div>
                     <div class="form-group">
-                        <label>Category Description</label>
+                        <label>Mô tả danh mục</label>
                         <textarea class="form-control" rows="3" name="cate_sum">{{$cate->cate_sum}}</textarea>
                     </div>
-                    <button type="submit" class="btn btn-default">Category Edit</button>
-                    <button type="reset" class="btn btn-default">Reset</button>
+                    <button type="submit" class="btn btn-default">Thêm</button>
+                    <button type="reset" class="btn btn-default">Viết lại</button>
                 <form>
             </div>
         </div>

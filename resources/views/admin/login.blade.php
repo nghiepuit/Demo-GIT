@@ -7,7 +7,7 @@
     <meta name="description" content="Khóa Học Lập Trình Laravel Framework 5.x Tại Khoa Phạm">
     <meta name="author" content="">
     <link rel="shortcut icon" type="image/icon" href="img/favicon.ico"/>
-    <title>Mobifone</title>
+    <title>Trang quản trị</title>
     <base href="{{asset('')}}">
     <!-- Bootstrap Core CSS -->
     <link href="admin_asset/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -30,7 +30,7 @@
             <div class="col-md-4 col-md-offset-4">
                 <div class="login-panel panel panel-default">
                     <div class="panel-heading">
-                        <h3 class="panel-title">Please Sign In</h3>
+                        <h3 class="panel-title">Đăng nhập hệ thống</h3>
                     </div>
                     <div class="panel-body">
                     @if(count($errors)>0)
@@ -44,16 +44,17 @@
                     @if(session('thongbao'))
                             {{session('thongbao')}}
                     @endif
+                    <br>
                         <form role="form" action="admin/login" method="POST">
                         <input type="hidden" name="_token" value="{{csrf_token()}}"/>
                             <fieldset>
                                 <div class="form-group">
-                                    <input class="form-control" placeholder="E-mail" name="email" autofocus>
+                                    <input class="form-control" placeholder="Email" name="email" autofocus>
                                 </div>
                                 <div class="form-group">
-                                    <input class="form-control" placeholder="Password" name="password" type="password" value="">
+                                    <input class="form-control" placeholder="Mật khẩu" name="password" type="password" value="">
                                 </div>
-                                <button type="submit" class="btn btn-lg btn-success btn-block">Login</button>
+                                <button type="submit" class="btn btn-lg btn-success btn-block">Đăng nhập</button>
                             </fieldset>
                         </form>
                     </div>

@@ -4,7 +4,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">NSX
+                <h1 class="page-header">Hãng
                     <small>{{$nsx->nsx_name}}</small>
                 </h1>
             </div>
@@ -26,15 +26,15 @@
                 <form action="admin/nsx/edit/{{$nsx->id}}" method="POST" enctype="multipart/form-data">
                     <input type="hidden" name="_token" value="{{csrf_token()}}">
                     <div class="form-group">
-                        <label>NSX Name</label>
-                        <input class="form-control" name="nsx_name" placeholder="Please Enter NSX Name" value="{{$nsx->nsx_name}}" />
+                        <label>Tên hãng</label>
+                        <input class="form-control" name="nsx_name" placeholder="Điền tên hãng" value="{{$nsx->nsx_name}}" />
                     </div>
 
                     <div class="form-group">
-                        <label>SubCate</label>
+                        <label>Chuyên mục</label>
                         <select class="form-control" name="subcate_id">
                         @foreach($subcate as $tl)
-                            <option 
+                            <option
                             @if($tl->id == $nsx->subcate_id)
                                 {{"selected"}}
                             @endif
@@ -43,8 +43,8 @@
                         </select>
                     </div>
 
-                    <button type="submit" class="btn btn-default">NSX Edit</button>
-                    <button type="reset" class="btn btn-default">Reset</button>
+                    <button type="submit" class="btn btn-default">Sửa hãng</button>
+                    <button type="reset" class="btn btn-default">Viết lại</button>
                 <form>
             </div>
         </div>

@@ -4,8 +4,8 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">SUBCategory
-                    <small>Add</small>
+                <h1 class="page-header">Chuyên mục
+                    <small>Thêm mới</small>
                 </h1>
             </div>
             <!-- /.col-lg-12 -->
@@ -26,15 +26,15 @@
                 <form action="admin/subcate/add" method="POST" enctype="multipart/form-data">
                     <input type="hidden" name="_token" value="{{csrf_token()}}"/>
                     <div class="form-group">
-                        <label>SubCategory Name</label>
-                        <input class="form-control" name="subcate_name" placeholder="Please Enter Sub Category Name" />
+                        <label>Tên chuyên mục</label>
+                        <input class="form-control" name="subcate_name" placeholder="Điền Tên chuyên mục" />
                     </div>
                     <div class="form-group">
-                        <label>SubCategory Image</label>
+                        <label>Ảnh chuyên mục</label>
                         <input class="form-control" type="file" name="subcate_img" />
                     </div>
                     <div class="form-group">
-                        <label>Catelogy</label>
+                        <label>Danh mục</label>
                         <select class="form-control" name="cate_id">
                         @foreach($cate as $tl)
                             <option value="{{$tl->id}}">{{$tl->cate_name}}</option>
@@ -42,11 +42,11 @@
                         </select>
                     </div>
                     <div class="form-group">
-                        <label>SubCategory Description</label>
+                        <label>Nội dung tóm tắt</label>
                         <textarea class="form-control" rows="3" name="subcate_sum"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-default">Category Add</button>
-                    <button type="reset" class="btn btn-default">Reset</button>
+                    <button type="submit" class="btn btn-default">Thêm mới</button>
+                    <button type="reset" class="btn btn-default">Viết lại</button>
                 </form>
             </div>
         </div>

@@ -51,6 +51,7 @@ class UserController extends Controller
     	$user->password = bcrypt($request->password);
     	$user->level = $request->level;
     	$user->info = $request->info;
+      $user->remember_token = 0;
     	$user->save();
     	return redirect('admin/user/list')->with('thongbao','Nhập User thành công');
 
@@ -131,12 +132,12 @@ class UserController extends Controller
         }   else{
             return redirect('admin/login')->with('thongbao','Login failed');
         }
+        return redirect('admin/cate/list');
     }
     public function getLogout(){
         Auth::logout();
         return redirect('admin/login');
     }
-    
+
     //
 }
-

@@ -12,8 +12,8 @@ function kiemtra () {
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">Post
-                    <small>List</small>
+                <h1 class="page-header">Bài viết
+                    <small>Danh sách</small>
                 </h1>
             </div>
             <!-- /.col-lg-12 -->
@@ -26,14 +26,14 @@ function kiemtra () {
                 <thead>
                     <tr align="center">
                         <th>ID</th>
-                        <th>Title</th>
-                        <th>Cate</th>
-                        <th>Subcate</th>
-                        <th>Summary</th>
+                        <th>Tiêu đề</th>
+                        <th>Danh mục</th>
+                        <th>Chuyên mục</th>
+                        <th>Tóm tắt</th>
                         <th>View</th>
                         <th>Hot</th>
-                        <th>Delete</th>
-                        <th>Edit</th>
+                        <th>Xóa</th>
+                        <th>Sửa</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -47,12 +47,12 @@ function kiemtra () {
                         <td>{{$p->post_view}}</td>
                         <td>
                             @if($p->post_high == "1")
-                                Yes
-                                @else No
+                                Có
+                                @else Không
                             @endif
                         </td>
-                        <td class="center"><i class="fa fa-trash-o fa-fw"></i><a href="admin/post/del/{{$p->id}}" onclick="return kiemtra();"> Delete</a></td>
-                        <td class="center"><i class="fa fa-pencil fa-fw"></i> <a href="admin/post/edit/{{$p->id}}">Edit</a></td>
+                        <td class="center"><i class="fa fa-trash-o fa-fw"></i><a href="admin/post/del/{{$p->id}}" onclick="return kiemtra();"> Xóa</a></td>
+                        <td class="center"><i class="fa fa-pencil fa-fw"></i> <a href="admin/post/edit/{{$p->id}}">Thêm</a></td>
                     </tr>
                 @endforeach
                 </tbody>

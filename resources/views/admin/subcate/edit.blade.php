@@ -4,7 +4,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">Sub Category
+                <h1 class="page-header">Chuyên mục
                     <small>{{$subcate->subcate_name}}</small>
                 </h1>
             </div>
@@ -26,21 +26,21 @@
                 <form action="admin/subcate/edit/{{$subcate->id}}" method="POST" enctype="multipart/form-data">
                     <input type="hidden" name="_token" value="{{csrf_token()}}">
                     <div class="form-group">
-                        <label>SubCategory Name</label>
-                        <input class="form-control" name="subcate_name" placeholder="Please Enter Category Name" value="{{$subcate->subcate_name}}" />
+                        <label>Tên chuyên mục</label>
+                        <input class="form-control" name="subcate_name"  value="{{$subcate->subcate_name}}" />
                     </div>
                     <div class="form-group">
-                        <label>SubCategory Image</label>
+                        <label>Ảnh chuyên mục</label>
                         <p>
                             <img width="200px" src="upload/subcate/{{$subcate->subcate_img}}" alt="">
                         </p>
                         <input class="form-control" type="file" name="subcate_img" />
                     </div>
                     <div class="form-group">
-                        <label>Cate</label>
+                        <label>Danh mục</label>
                         <select class="form-control" name="cate_id">
                         @foreach($cate as $tl)
-                            <option 
+                            <option
                             @if($tl->id == $subcate->cate_id)
                                 {{"selected"}}
                             @endif
@@ -49,11 +49,11 @@
                         </select>
                     </div>
                     <div class="form-group">
-                        <label>SubCategory Description</label>
+                        <label>Nội dung tóm tắt</label>
                         <textarea class="form-control" rows="3" name="subcate_sum">{{$subcate->subcate_sum}}</textarea>
                     </div>
-                    <button type="submit" class="btn btn-default">Category Edit</button>
-                    <button type="reset" class="btn btn-default">Reset</button>
+                    <button type="submit" class="btn btn-default">Sửa chuyên mục</button>
+                    <button type="reset" class="btn btn-default">Viết lại</button>
                 <form>
             </div>
         </div>

@@ -12,8 +12,8 @@ function kiemtra () {
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">NSX
-                    <small>List</small>
+                <h1 class="page-header">Hãng
+                    <small>Danh sách</small>
                 </h1>
             </div>
             <!-- /.col-lg-12 -->
@@ -26,10 +26,10 @@ function kiemtra () {
                 <thead>
                     <tr align="center">
                         <th>ID</th>
-                        <th>Name</th>
-                        <th>SubCate</th>
-                        <th>Delete</th>
-                        <th>Edit</th>
+                        <th>Tên hãng</th>
+                        <th>Chuyên mục</th>
+                        <th>Xóa</th>
+                        <th>Sửa</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -38,11 +38,11 @@ function kiemtra () {
                         <td>{{$tl->id}}</td>
                         <td>{{$tl->nsx_name}}</td>
                         <td>{{isset($tl->subcate->subcate_name)?$tl->subcate->subcate_name:""}}</td>
-                        <td class="center"><i class="fa fa-trash-o  fa-fw"></i><a href="admin/nsx/del/{{$tl->id}}" onclick="return kiemtra();"> Delete</a></td>
-                        <td class="center"><i class="fa fa-pencil fa-fw"></i> <a href="admin/nsx/edit/{{$tl->id}}">Edit</a></td>
+                        <td class="center"><i class="fa fa-trash-o  fa-fw"></i><a href="admin/nsx/del/{{$tl->id}}" onclick="return kiemtra();"> Xóa</a></td>
+                        <td class="center"><i class="fa fa-pencil fa-fw"></i> <a href="admin/nsx/edit/{{$tl->id}}">Sửa</a></td>
                     </tr>
                     @empty
-                        Khong co nsx nao
+                        Không có Hãng nào
                     @endforelse
                 </tbody>
             </table>

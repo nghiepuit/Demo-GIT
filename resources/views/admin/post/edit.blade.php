@@ -4,7 +4,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">Post
+                <h1 class="page-header">Bài viết
                     <small>{{$post->post_title}}</small>
                 </h1>
             </div>
@@ -26,10 +26,10 @@
                 <form action="admin/post/edit/{{$post->id}}" method="POST" enctype="multipart/form-data">
                 <input type="hidden" name="_token" value="{{csrf_token()}}"/>
                     <div class="form-group">
-                        <label>Cate</label>
+                        <label>Danh mục</label>
                         <select class="form-control" name="cate_id" id="cate_id">
                         @foreach($cate as $ct)
-                            <option 
+                            <option
                             @if($post->subcate->cate->id == $ct->id)
                                 {{"selected"}}
                             @endif
@@ -38,10 +38,10 @@
                         </select>
                     </div>
                     <div class="form-group">
-                        <label>Subcate</label>
+                        <label>Chuyên mục</label>
                         <select class="form-control" name="subcate_id" id="subcate_id">
                         @foreach($subcate as $sc)
-                            <option 
+                            <option
                             @if($post->subcate->id == $sc->id)
                                 {{"selected"}}
                             @endif
@@ -50,42 +50,42 @@
                         </select>
                     </div>
                     <div class="form-group">
-                        <label>Post Title</label>
+                        <label>Tiêu đề bài viết</label>
                         <input class="form-control" name="post_title" placeholder="Please Enter Post Title" value="{{$post->post_title}}" />
                     </div>
                     <div class="form-group">
-                        <label>Post Image</label>
+                        <label>Ảnh bài viết</label>
                         <p>
                             <img width="200px" src="upload/post/{{$post->post_img}}" alt="">
                         </p>
                         <input class="form-control" type="file" name="post_img" />
                     </div>
                     <div class="form-group">
-                        <label>Post Summary</label>
+                        <label>Tóm tắt</label>
                         <textarea class="form-control" rows="3" name="post_sum">{{$post->post_sum}}</textarea>
                     </div>
                     <div class="form-group">
-                        <label>Title Content</label>
+                        <label>Nội dung</label>
                         <textarea class="form-control summernote" rows="5" name="post_content">{{$post->post_content}}</textarea>
                     </div>
                     <div class="form-group">
-                        <label>Post Highlight</label>
+                        <label>Được quan tâm?</label>
                         <label class="radio-inline">
                             <input name="post_high" value="0" type="radio"
                                 @if($post->post_high == 0)
                                     {{"checked"}}
                                 @endif
-                            >No
+                            >Không
                         </label>
                         <label class="radio-inline">
                             <input name="post_high" value="1" type="radio"
                             @if($post->post_high == 1)
                                     {{"checked"}}
-                                @endif>Yes
+                                @endif>Có
                         </label>
                     </div>
-                    <button type="submit" class="btn btn-default">Post Edit</button>
-                    <button type="reset" class="btn btn-default">Reset</button>
+                    <button type="submit" class="btn btn-default">Sửa bài viết</button>
+                    <button type="reset" class="btn btn-default">Viết lại</button>
                 <form>
             </div>
         </div>

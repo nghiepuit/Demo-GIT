@@ -4,7 +4,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">User
+                <h1 class="page-header">Quản trị viên
                     <small>{{$user->name}}</small>
                 </h1>
             </div>
@@ -26,7 +26,7 @@
                 <form action="admin/user/edit/{{$user->id}}" method="POST">
                 <input type="hidden" name="_token" value="{{csrf_token()}}"/>
                     <div class="form-group">
-                        <label>User Name</label>
+                        <label>Tên quản trị viên</label>
                         <input class="form-control" name="name" placeholder="Nhập tên User" value="{{$user->name}}" />
                     </div>
                     <div class="form-group">
@@ -35,35 +35,35 @@
                     </div>
                     <div class="form-group">
                         <input type="checkbox" id="changepass" name="passChange">
-                        <label>Change Password</label>
+                        <label>Mật khẩu mới</label>
                         <input type="password" class="form-control password" name="password" placeholder="Nhập mật khẩu" disabled="" />
                     </div>
                     <div class="form-group">
-                        <label>Password Again</label>
+                        <label>Nhập lại mật khẩu mới</label>
                         <input type="password" class="form-control password" name="passwordAgain" placeholder="Nhập mật khẩu" disabled="" />
                     </div>
                     <div class="form-group">
-                        <label>User Level</label>
+                        <label>Quyền</label>
                         <label class="radio-inline">
-                            <input name="level" value="0" 
+                            <input name="level" value="0"
                                 @if($user->level == 0)
                                 {{"checked"}}
-                                @endif type="radio">Member
+                                @endif type="radio">Nhân viên
                         </label>
                         <label class="radio-inline">
-                            <input name="level" 
+                            <input name="level"
                             @if($user->level == 1)
                                 {{"checked"}}
-                                @endif value="1" type="radio">Admin
+                                @endif value="1" type="radio">Quản lý
                         </label>
                     </div>
                     <div class="form-group">
-                        <label>User Info</label>
+                        <label>Thông tin quản trị viên</label>
                         <textarea name="info" class="form-control" rows="3">{{$user->info}}</textarea>
                     </div>
-                    
-                    <button type="submit" class="btn btn-default">User Edit</button>
-                    <button type="reset" class="btn btn-default">Reset</button>
+
+                    <button type="submit" class="btn btn-default">Sửa thông tin</button>
+                    <button type="reset" class="btn btn-default">Nhập lại</button>
                 <form>
             </div>
         </div>

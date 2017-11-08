@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="MOBIFONE THAI NGUYEN 2016">
     <meta name="author" content="">
-    <title>Admin-Mobifone</title>
+    <title>Đồ Án UIT</title>
     <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
     <base href="{{asset('')}}">
     <!-- Bootstrap Core CSS -->
@@ -26,7 +26,11 @@
 
     <!-- DataTables Responsive CSS -->
     <link href="admin_asset/bower_components/datatables-responsive/css/dataTables.responsive.css" rel="stylesheet">
-    
+    <script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+    <script src="https://www.amcharts.com/lib/3/serial.js"></script>
+    <script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js"></script>
+    <link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
+    <script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
 </head>
 
 <body>

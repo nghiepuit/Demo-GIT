@@ -12,7 +12,7 @@ function kiemtra () {
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">Category
+                <h1 class="page-header">Danh mục
                     <small>List</small>
                 </h1>
             </div>
@@ -26,10 +26,10 @@ function kiemtra () {
                 <thead>
                     <tr align="center">
                         <th>ID</th>
-                        <th>Name</th>
-                        <th>Customer</th>
-                        <th>Delete</th>
-                        <th>Edit</th>
+                        <th>Tên</th>
+                        <th>Khách hàng</th>
+                        <th>Xóa</th>
+                        <th>Sửa</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -38,11 +38,11 @@ function kiemtra () {
                         <td>{{$tl->id}}</td>
                         <td>{{$tl->cate_name}}</td>
                         <td>{{isset($tl->customer->customer_name)?$tl->customer->customer_name:"Unknown"}}</td>
-                        <td class="center"><i class="fa fa-trash-o  fa-fw"></i><a href="admin/cate/del/{{$tl->id}}" onclick="return kiemtra();"> Delete</a></td>
-                        <td class="center"><i class="fa fa-pencil fa-fw"></i> <a href="admin/cate/edit/{{$tl->id}}">Edit</a></td>
+                        <td class="center"><i class="fa fa-trash-o  fa-fw"></i><a href="admin/cate/del/{{$tl->id}}" onclick="return kiemtra();"> Xóa</a></td>
+                        <td class="center"><i class="fa fa-pencil fa-fw"></i> <a href="admin/cate/edit/{{$tl->id}}">Sửa</a></td>
                     </tr>
                     @empty
-                        Khong co subcate nao
+                        Không có danh mục nào
                     @endforelse
                 </tbody>
             </table>

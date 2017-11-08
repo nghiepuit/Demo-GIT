@@ -4,8 +4,8 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">NSX
-                    <small>Add</small>
+                <h1 class="page-header">Hãng
+                    <small>Thêm mới</small>
                 </h1>
             </div>
             <!-- /.col-lg-12 -->
@@ -27,12 +27,12 @@
                     <input type="hidden" name="_token" value="{{csrf_token()}}"/>
 
                     <div class="form-group">
-                        <label>NSX Name</label>
-                        <input class="form-control" name="nsx_name" placeholder="Please Enter Nsx Name" />
+                        <label>Tên hãng</label>
+                        <input class="form-control" name="nsx_name" placeholder="Điền tên hãng" />
                     </div>
 
                     <div class="form-group">
-                        <label>Catelogy</label>
+                        <label>Chuyên mục</label>
                         <select class="form-control" name="subcate_id">
                         @foreach($subcate as $tl)
                             <option value="{{$tl->id}}">{{$tl->subcate_name}}</option>
@@ -40,8 +40,8 @@
                         </select>
                     </div>
 
-                    <button type="submit" class="btn btn-default">NSX Add</button>
-                    <button type="reset" class="btn btn-default">Reset</button>
+                    <button type="submit" class="btn btn-default">Thêm mới</button>
+                    <button type="reset" class="btn btn-default">Viết lại</button>
                 </form>
             </div>
         </div>

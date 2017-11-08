@@ -12,8 +12,8 @@ function kiemtra () {
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">User
-                    <small>List</small>
+                <h1 class="page-header">Quản trị viên
+                    <small>Danh sách</small>
                 </h1>
             </div>
             <!-- /.col-lg-12 -->
@@ -21,12 +21,12 @@ function kiemtra () {
                 <thead>
                     <tr align="center">
                         <th>ID</th>
-                        <th>Name</th>
+                        <th>Tên</th>
                         <th>Email</th>
-                        <th>Level</th>
-                        <th>Info</th>
-                        <th>Delete</th>
-                        <th>Edit</th>
+                        <th>Chức vụ</th>
+                        <th>Thông tin</th>
+                        <th>Xóa</th>
+                        <th>Sửa</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -37,14 +37,14 @@ function kiemtra () {
                         <td>{{$u->email}}</td>
                         <td>
                             @if($u->level == 1)
-                            {{"Admin"}}
+                            {{"Quản lý"}}
                             @else
-                            {{"Member"}}
+                            {{"Nhân viên"}}
                             @endif
                         </td>
                         <td>{{$u->info}}</td>
-                        <td class="center"><i class="fa fa-trash-o  fa-fw"></i><a href="admin/user/del/{{$u->id}}" onclick="return kiemtra();"> Delete</a></td>
-                        <td class="center"><i class="fa fa-pencil fa-fw"></i> <a href="admin/user/edit/{{$u->id}}">Edit</a></td>
+                        <td class="center"><i class="fa fa-trash-o  fa-fw"></i><a href="admin/user/del/{{$u->id}}" onclick="return kiemtra();"> Xóa</a></td>
+                        <td class="center"><i class="fa fa-pencil fa-fw"></i> <a href="admin/user/edit/{{$u->id}}">Sửa</a></td>
                     </tr>
                     @endforeach
                 </tbody>

@@ -4,8 +4,8 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">User
-                    <small>Add</small>
+                <h1 class="page-header">Quản trị viên
+                    <small>Thêm mới</small>
                 </h1>
             </div>
             <!-- /.col-lg-12 -->
@@ -26,37 +26,37 @@
                 <form action="admin/user/add" method="POST">
                 <input type="hidden" name="_token" value="{{csrf_token()}}"/>
                     <div class="form-group">
-                        <label>User Name</label>
-                        <input class="form-control" name="name" placeholder="Nhập tên User" />
+                        <label>Tên quản trị viên</label>
+                        <input class="form-control" name="name" placeholder="Nhập tên quản trị viên" />
                     </div>
                     <div class="form-group">
                         <label>Email</label>
                         <input class="form-control" name="email" type="email" placeholder="Nhập địa chỉ Email" />
                     </div>
                     <div class="form-group">
-                        <label>Password</label>
+                        <label>Mật khẩu</label>
                         <input type="password" class="form-control" name="password" placeholder="Nhập mật khẩu" />
                     </div>
                     <div class="form-group">
-                        <label>Password Again</label>
-                        <input type="password" class="form-control" name="passwordAgain" placeholder="Nhập mật khẩu" />
+                        <label>Nhập lại mật khẩu</label>
+                        <input type="password" class="form-control" name="passwordAgain" placeholder="Nhập lại mật khẩu" />
                     </div>
                     <div class="form-group">
-                        <label>User Level</label>
+                        <label>Quyền</label>
                         <label class="radio-inline">
-                            <input name="level" value="0" checked="" type="radio">Member
+                            <input name="level" value="0" checked="" type="radio">Nhân viên
                         </label>
                         <label class="radio-inline">
-                            <input name="level" value="1" type="radio">Admin
+                            <input name="level" value="1" type="radio">Quản lý
                         </label>
                     </div>
                     <div class="form-group">
-                        <label>User Info</label>
+                        <label>Thông tin quản trị viên</label>
                         <textarea name="info" class="form-control" rows="3"></textarea>
                     </div>
-                    
-                    <button type="submit" class="btn btn-default">User Add</button>
-                    <button type="reset" class="btn btn-default">Reset</button>
+
+                    <button type="submit" class="btn btn-default">Thêm mới</button>
+                    <button type="reset" class="btn btn-default">Nhập lại</button>
                 <form>
             </div>
         </div>

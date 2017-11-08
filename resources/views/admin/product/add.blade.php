@@ -4,8 +4,8 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">Product
-                    <small>Add</small>
+                <h1 class="page-header">Sản phẩm
+                    <small>Thêm mới</small>
                 </h1>
             </div>
             <!-- /.col-lg-12 -->
@@ -26,7 +26,7 @@
                 <form action="admin/product/add" method="POST" enctype="multipart/form-data">
                 <input type="hidden" name="_token" value="{{csrf_token()}}"/>
                     <div class="form-group">
-                        <label>Subcate</label>
+                        <label>Chuyên mục</label>
                         <select class="form-control" name="subcate_id" id="subcate_id">
                         @foreach($subcate as $ct)
                             <option value="{{$ct->id}}">{{$ct->subcate_name}}</option>
@@ -34,7 +34,7 @@
                         </select>
                     </div>
                     <div class="form-group">
-                        <label>NSX</label>
+                        <label>Hãng</label>
                         <select class="form-control" name="nsx_id" id="nsx_id">
                         @foreach($nsx as $sc)
                             <option value="{{$sc->id}}">{{$sc->nsx_name}}</option>
@@ -42,15 +42,15 @@
                         </select>
                     </div>
                     <div class="form-group">
-                        <label>Product name</label>
-                        <input class="form-control" name="product_name" placeholder="Please Enter Product Name" />
+                        <label>Tên sản phẩm</label>
+                        <input class="form-control" name="product_name" placeholder="Điền Tên sản phẩm" />
                     </div>
                     <div class="form-group">
-                        <label>Product model</label>
-                        <input class="form-control" name="product_model" placeholder="Please Enter Product Model" />
+                        <label>Model sản phẩm</label>
+                        <input class="form-control" name="product_model" placeholder="Điền Model sản phẩm" />
                     </div>
                     <div class="form-group">
-                        <label>Status</label>
+                        <label>Trạng thái</label>
                         <label class="radio-inline">
                             <input name="product_status" value="1" checked="" type="radio">Hàng mới về
                         </label>
@@ -63,32 +63,32 @@
                     </div>
 
                     <div class="form-group">
-                        <label>Product Price</label>
-                        <input class="form-control" name="product_price" placeholder="Please Enter Product Price" />
+                        <label>Giá</label>
+                        <input class="form-control" name="product_price" placeholder="Điền giá sản phẩm" />
                     </div>
                     <div class="form-group">
-                        <label>Product Salevalue</label>
-                        <input class="form-control" name="product_salevalue" placeholder="Please Enter Product Salevalue" />
+                        <label>Phần trăm giảm giá</label>
+                        <input class="form-control" name="product_salevalue" placeholder="Điền Phần trăm giảm giá" />
                     </div>
 
                     <div class="form-group">
-                        <label>Product Image</label>
+                        <label>Ảnh sản phẩm</label>
                         <input class="form-control" type="file" name="product_img" />
                     </div>
-                    
+
                     <div class="form-group">
-                        <label>Product tag</label>
-                        <input class="form-control" name="product_tag" placeholder="Please Enter Product Tag" />
+                        <label>Tag sản phẩm</label>
+                        <input class="form-control" name="product_tag" placeholder="Điền tag sản phẩm" />
                     </div>
-                    
+
                     <div class="form-group">
-                        <label>Product Info</label>
+                        <label>Thông tin sản phẩm</label>
                         <textarea class="form-control summernote" rows="5" name="product_info"></textarea>
                     </div>
 
-                    
-                    <button type="submit" class="btn btn-default">Post Add</button>
-                    <button type="reset" class="btn btn-default">Reset</button>
+
+                    <button type="submit" class="btn btn-default">Thêm sản phẩm</button>
+                    <button type="reset" class="btn btn-default">Viết lại</button>
                 <form>
             </div>
         </div>

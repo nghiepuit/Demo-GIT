@@ -4,8 +4,8 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">Category
-                    <small>Add</small>
+                <h1 class="page-header">Danh mục
+                    <small>Thêm</small>
                 </h1>
             </div>
             <!-- /.col-lg-12 -->
@@ -26,27 +26,27 @@
                 <form action="admin/cate/add" method="POST" enctype="multipart/form-data">
                     <input type="hidden" name="_token" value="{{csrf_token()}}"/>
                     <div class="form-group">
-                        <label>Category Name</label>
-                        <input class="form-control" name="cate_name" placeholder="Please Enter Category Name" />
+                        <label>Tên Danh mục</label>
+                        <input class="form-control" name="cate_name" placeholder="Tên Danh mục" />
                     </div>
                     <div class="form-group">
-                        <label>Category Image</label>
+                        <label>Ảnh Danh mục</label>
                         <input class="form-control" type="file" name="cate_img" />
                     </div>
                     <div class="form-group">
-                        <label>Customer</label>
+                        <label>Khách hàng</label>
                         <select class="form-control" name="customer_id">
                             @foreach($customer as $cus)
                                 <option value="{{$cus->id}}">{{$cus->customer_name}}</option>
-                            @endforeach                            
+                            @endforeach
                         </select>
                     </div>
                     <div class="form-group">
-                        <label>Category Description</label>
+                        <label>Mô tả danh mục</label>
                         <textarea class="form-control" rows="3" name="cate_sum"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-default">Category Add</button>
-                    <button type="reset" class="btn btn-default">Reset</button>
+                    <button type="submit" class="btn btn-default">Thêm</button>
+                    <button type="reset" class="btn btn-default">Viết lại</button>
                 </form>
             </div>
         </div>

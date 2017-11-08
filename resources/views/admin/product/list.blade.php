@@ -12,8 +12,8 @@ function kiemtra () {
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">Product
-                    <small>List</small>
+                <h1 class="page-header">Sản phẩm
+                    <small>Danh sách</small>
                 </h1>
             </div>
             <!-- /.col-lg-12 -->
@@ -26,15 +26,15 @@ function kiemtra () {
                 <thead>
                     <tr align="center">
                         <th>ID</th>
-                        <th>Name</th>
+                        <th>Tên</th>
                         <th>Model</th>
-                        <th>Nsx</th>
-                        <th>Price</th>
-                        <th>Status</th>
-                        <th>Product Info</th>
-                        <th>Salevalue</th>
-                        <th>Delete</th>
-                        <th>Edit</th>
+                        <th>Hãng</th>
+                        <th>Giá</th>
+                        <th>Trạng thái</th>
+                        <th>Thông tin</th>
+                        <th>Giảm giá %</th>
+                        <th>Xóa</th>
+                        <th>Sửa</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -60,10 +60,10 @@ function kiemtra () {
                                 Liên hệ
                             @endif
                         </td>
-                        <td>{{$p->product_info}}</td>
+                        <td>{{$p->product_tag}}</td>
                         <td>{{$p->product_salevalue}}</td>
-                        <td class="center"><i class="fa fa-trash-o fa-fw"></i><a href="admin/product/del/{{$p->id}}" onclick="return kiemtra();"> Delete</a></td>
-                        <td class="center"><i class="fa fa-pencil fa-fw"></i> <a href="admin/product/edit/{{$p->id}}">Edit</a></td>
+                        <td class="center"><i class="fa fa-trash-o fa-fw"></i><a href="admin/product/del/{{$p->id}}" onclick="return kiemtra();"> Xóa</a></td>
+                        <td class="center"><i class="fa fa-pencil fa-fw"></i> <a href="admin/product/edit/{{$p->id}}">Sửa</a></td>
                     </tr>
                 @endforeach
                 </tbody>
